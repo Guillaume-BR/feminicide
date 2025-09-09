@@ -1,0 +1,391 @@
+date,commune,departement,prenom,age,commune_sans_accent,departement_sans_accent,nom_sans_accent,dep_nom,dep_code,population,superficie_km2,densite,latitude,longitude,nb_par_departement,frequence_par_habitant
+2022-11-25,Prahecq,Deux-Sèvres,Leslie,22,prahecq,deux-sevres,prahecq,deux-sevres,79,2246.0,25.0,90.0,46.259,-0.345,2,0.0008904719501335708
+2023-01-04,Perles,Aisne,–,50,les-septvallons,aisne,les-septvallons,aisne,02,1215.0,9.0,142.0,49.359,3.654,4,0.0032921810699588477
+2022-12-31,Charleville-Mézières,Ardennes,–,23,charleville-mezieres,ardennes,charleville-mezieres,ardennes,08,46398.0,32.0,1460.0,49.76,4.72,3,6.46579593948015e-05
+2022-10-16,Goudelin,Côtes-d'Armor,Jacqueline,67,goudelin,cotes-d'armor,goudelin,cotes-d'armor,22,1720.0,23.0,74.0,48.605,-3.016,4,0.002325581395348837
+2022-07-28,13e arrondissement,Paris,Florence,48,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-06-06,Mulhouse,Haut-Rhin,–,70,mulhouse,haut-rhin,mulhouse,haut-rhin,68,106341.0,22.0,4760.0,47.75,7.336,4,3.7614842816975576e-05
+2022-03-18,Lannoy,Nord,Lucienne,68,lannoy,nord,lannoy,nord,59,1800.0,0.0,10588.0,50.666,3.212,15,0.008333333333333333
+2022-06-14,Pantin,Seine-Saint-Denis,Sophie,22,pantin,seine-saint-denis,pantin,seine-saint-denis,93,60800.0,5.0,12063.0,48.897,2.401,15,0.0002467105263157895
+2022-09-19,Mont-Saint-Martin,Meurthe-et-Moselle,Diana,40,mont-saint-martin,meurthe-et-moselle,mont-saint-martin,meurthe-et-moselle,54,9202.0,9.0,1049.0,49.544,5.786,5,0.0005433601391001956
+2022-08-09,Floirac,Gironde,–,65,floirac,gironde,floirac,gironde,33,17749.0,8.0,2096.0,44.83,-0.528,7,0.00039438841624880275
+2022-04-21,Grand-Fayt,Nord,Émilie,89,grand-fayt,nord,grand-fayt,nord,59,475.0,9.0,54.0,50.112,3.804,15,0.031578947368421054
+2022-04-06,Villeurbanne,Rhône,Laetitia,12,villeurbanne,rhone,villeurbanne,rhone,69,156928.0,15.0,10603.0,45.766,4.88,15,9.55852365415987e-05
+2022-12-26,Valframbert,Orne,–,60,valframbert,orne,valframbert,orne,61,1721.0,14.0,120.0,48.463,0.108,2,0.0011621150493898896
+2022-04-04,Saint-Jean-de-Gonville,Ain,–,76,saint-jean-de-gonville,ain,saint-jean-de-gonville,ain,01,1988.0,12.0,164.0,46.212,5.954,2,0.001006036217303823
+2022-09-23,Rouen,Seine-Maritime,Laurence,56,rouen,seine-maritime,rouen,seine-maritime,76,114083.0,21.0,5326.0,49.444,1.1,8,7.01243831245672e-05
+2022-04-04,Quimper,Finistère,–,53,quimper,finistere,quimper,finistere,29,63642.0,84.0,755.0,47.996,-4.102,7,0.0001099902580057195
+2022-04-01,Brecé,Mayenne,–,40,brece,mayenne,brece,mayenne,53,833.0,35.0,24.0,48.399,-0.791,3,0.003601440576230492
+2022-12-19,Évry-Courcouronnes,Essonne,Sara,40,evry-courcouronnes,essonne,evry-courcouronnes,essonne,91,66177.0,9.0,7740.0,48.624,2.429,10,0.00015110990223189325
+2022-12-08,Pargny-sur-Saulx,Marne,–,90,pargny-sur-saulx,marne,pargny-sur-saulx,marne,51,1714.0,12.0,139.0,48.769,4.835,5,0.0029171528588098016
+2022-11-23,Saint-Jacques-de-la-Lande,Ille-et-Vilaine,Bérénice,25,saint-jacques-de-la-lande,ille-et-vilaine,saint-jacques-de-la-lande,ille-et-vilaine,35,13656.0,12.0,1110.0,48.081,-1.713,8,0.0005858230814294083
+2022-11-18,Tonneins,Lot-et-Garonne,Vanesa,14,tonneins,lot-et-garonne,tonneins,lot-et-garonne,47,9337.0,35.0,268.0,44.391,0.308,3,0.0003213023455071222
+2022-11-11,10e arrondissement,Paris,Sabah,49,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-11-13,Savigné,Vienne,Chantal,65,savigne,vienne,savigne,vienne,86,1284.0,37.0,35.0,46.16,0.321,4,0.003115264797507788
+2022-11-12,Montaren-et-Saint-Médiers,Gard,Edwige,35,montaren-et-saint-mediers,gard,montaren-et-saint-mediers,gard,30,1388.0,19.0,72.0,44.029,4.38,4,0.002881844380403458
+2022-11-10,Diancey,Côte-d'Or,Véronique,59,diancey,cote-d'or,diancey,cote-d'or,21,97.0,10.0,10.0,47.182,4.363,2,0.020618556701030927
+2022-11-09,Ronchin,Nord,Hélana,19,ronchin,nord,ronchin,nord,59,19437.0,5.0,3553.0,50.606,3.078,15,0.0007717240314863404
+2022-11-08,Ducos,Martinique,–,69,ducos,martinique,ducos,martinique,972,17912.0,31.0,573.0,14.576,-60.976,2,0.00011165698972755694
+2022-11-06,Sainte-Rose,La Réunion,Charlotte,49,sainte-rose,la reunion,sainte-rose,la reunion,974,6343.0,178.0,36.0,-21.128,55.793,4,0.0006306164275579379
+2022-11-02,Stains,Seine-Saint-Denis,Johanna,27,stains,seine-saint-denis,stains,seine-saint-denis,93,40359.0,5.0,7488.0,48.955,2.382,15,0.00037166431279268564
+2022-10-30,Carantec,Finistère,Florence,38,carantec,finistere,carantec,finistere,29,3236.0,9.0,350.0,48.668,-3.914,7,0.0021631644004944375
+2022-11-01,Meudon,Hauts-de-Seine,–,35,meudon,hauts-de-seine,meudon,hauts-de-seine,92,46342.0,10.0,4657.0,48.813,2.239,6,0.00012947218505890984
+2022-10-29,Ille-sur-Têt,Pyrénées-Orientales,–,40,ille-sur-tet,pyrenees-orientales,ille-sur-tet,pyrenees-orientales,66,5538.0,32.0,175.0,42.672,2.622,3,0.0005417118093174431
+2022-10-16,Nantes,Loire-Atlantique,Nadia,47,nantes,loire-atlantique,nantes,loire-atlantique,44,323204.0,66.0,4914.0,47.218,-1.554,4,1.2376084454400318e-05
+2022-10-14,Ajaccio,Corse-du-Sud,Kimberly,23,ajaccio,corse-du-sud,ajaccio,corse-du-sud,2A,73822.0,83.0,888.0,41.919,8.739,1,1.354609736934789e-05
+2022-10-12,Blois,Loir-et-Cher,–,36,blois,loir-et-cher,blois,loir-et-cher,41,46813.0,38.0,1248.0,47.589,1.337,3,6.408476277956978e-05
+2022-10-08,Trignac,Loire-Atlantique,Amélie,30,trignac,loire-atlantique,trignac,loire-atlantique,44,8106.0,14.0,569.0,47.318,-2.188,4,0.0004934616333580064
+2022-05-18,14e arrondissement,Paris,–,71,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-07-13,Gradignan,Gironde,–,60,gradignan,gironde,gradignan,gironde,33,25835.0,16.0,1650.0,44.772,-0.608,7,0.00027095026127346624
+2022-09-29,Leymen,Haut-Rhin,–,40,leymen,haut-rhin,leymen,haut-rhin,68,1254.0,12.0,108.0,47.495,7.483,4,0.003189792663476874
+2022-09-22,Saint-Raphaël,Var,Edith,60,saint-raphael,var,saint-raphael,var,83,35950.0,91.0,395.0,43.425,6.768,10,0.0002781641168289291
+2022-09-17,Mandelieu-La-Napoule,Alpes-Maritimes,Sasia,30,mandelieu-la-napoule,alpes-maritimes,mandelieu-la-napoule,alpes-maritimes,06,21561.0,32.0,672.0,43.543,6.932,8,0.0003710403042530495
+2022-09-10,Commelle-Vernay,Loire,Élodie,34,commelle-vernay,loire,commelle-vernay,loire,42,3029.0,13.0,239.0,46.0,4.059,3,0.0009904258831297458
+2022-09-07,Marseille,Bouches-du-Rhône,Charlène,36,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2022-09-07,Marseille,Bouches-du-Rhône,Marie-Antoinette,70,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2022-09-06,Morre,Doubs,Marion,43,morre,doubs,morre,doubs,25,1321.0,5.0,249.0,47.229,6.068,4,0.003028009084027252
+2022-08-31,Villeurbanne,Rhône,Ghania,50,villeurbanne,rhone,villeurbanne,rhone,69,156928.0,15.0,10603.0,45.766,4.88,15,9.55852365415987e-05
+2022-08-30,Wittenheim,Haut-Rhin,–,74,wittenheim,haut-rhin,wittenheim,haut-rhin,68,15262.0,19.0,797.0,47.811,7.34,4,0.0002620888481195125
+2022-08-30,Boulazac-Isle-Manoire,Dordogne,–,52,boulazac-isle-manoire,dordogne,boulazac-isle-manoire,dordogne,24,10697.0,15.0,733.0,45.182,0.763,5,0.00046742077217911565
+2022-08-26,Alièze,Jura,Sylveline,49,alieze,jura,alieze,jura,39,148.0,6.0,25.0,46.586,5.578,2,0.013513513513513514
+2022-08-21,Carrières-sur-Seine,Yvelines,Clara,18,carrieres-sur-seine,yvelines,carrieres-sur-seine,yvelines,78,15038.0,5.0,2960.0,48.906,2.176,8,0.0005319856363878176
+2022-08-17,Pledran,Côtes-d'Armor,–,86,pledran,cotes-d'armor,pledran,cotes-d'armor,22,6910.0,35.0,199.0,48.446,-2.746,4,0.0005788712011577424
+2022-08-11,Vélizy-Villacoublay,Yvelines,Magali,42,velizy-villacoublay,yvelines,velizy-villacoublay,yvelines,78,22713.0,9.0,2535.0,48.783,2.191,8,0.00035222119491040374
+2022-07-25,Vigneux-sur-Seine,Essonne,Nabou,14,vigneux-sur-seine,essonne,vigneux-sur-seine,essonne,91,31050.0,9.0,3462.0,48.7,2.417,10,0.00032206119162640903
+2022-07-25,Vigneux-sur-Seine,Essonne,Kadia,50,vigneux-sur-seine,essonne,vigneux-sur-seine,essonne,91,31050.0,9.0,3462.0,48.7,2.417,10,0.00032206119162640903
+2022-07-04,Pouyastruc,Hautes-Pyrénées,Aurélie,32,pouyastruc,hautes-pyrenees,pouyastruc,hautes-pyrenees,65,636.0,12.0,54.0,43.268,0.17,4,0.006289308176100629
+2022-07-25,Cavaillon,Vaucluse,Malgorzata,51,cavaillon,vaucluse,cavaillon,vaucluse,84,25923.0,46.0,565.0,43.836,5.038,6,0.0002314546927438954
+2022-07-21,Lanester,Morbihan,–,47,lanester,morbihan,lanester,morbihan,56,23026.0,16.0,1419.0,47.764,-3.347,6,0.00026057500217145836
+2022-07-16,Noisy-le-Sec,Seine-Saint-Denis,Edina,31,noisy-le-sec,seine-saint-denis,noisy-le-sec,seine-saint-denis,93,46094.0,5.0,9164.0,48.89,2.452,15,0.00032542196381307763
+2022-07-08,Domagné,Ille-et-Vilaine,Laetitia,51,domagne,ille-et-vilaine,domagne,ille-et-vilaine,35,2431.0,29.0,83.0,48.07,-1.395,8,0.003290826820238585
+2022-07-03,Montmagny,Val-d'Oise,Rita,44,montmagny,val-d'oise,montmagny,val-d'oise,95,14775.0,3.0,5095.0,48.975,2.346,5,0.00033840947546531303
+2022-06-26,Narbonne,Aude,Cristal,26,narbonne,aude,narbonne,aude,11,56395.0,175.0,323.0,43.184,3.004,1,1.7732068445784202e-05
+2022-06-20,Blangy-sur-Bresle,Seine-Maritime,Martine,68,blangy-sur-bresle,seine-maritime,blangy-sur-bresle,seine-maritime,76,2862.0,17.0,164.0,49.932,1.63,8,0.002795248078266946
+2022-06-19,Lompret,Nord,Monique,78,lompret,nord,lompret,nord,59,2182.0,3.0,699.0,50.67,2.991,15,0.0068744271310724105
+2022-06-12,Blois,Loir-et-Cher,Sandrine,35,blois,loir-et-cher,blois,loir-et-cher,41,46813.0,38.0,1248.0,47.589,1.337,3,6.408476277956978e-05
+2022-06-09,Clessé,Saône-et-Loire,Emma,13,clesse,saone-et-loire,clesse,saone-et-loire,71,854.0,10.0,85.0,46.421,4.822,6,0.00702576112412178
+2022-06-01,Nice,Alpes-Maritimes,Valéria,34,nice,alpes-maritimes,nice,alpes-maritimes,06,348085.0,74.0,4710.0,43.696,7.272,8,2.2982892109685852e-05
+2022-05-20,Bossay-sur-Claise,Indre-et-Loire,Sylvie,60,bossay-sur-claise,indre-et-loire,bossay-sur-claise,indre-et-loire,37,724.0,66.0,11.0,46.832,0.962,4,0.0055248618784530384
+2022-05-09,Saint-Rémy,Saône-et-Loire,Sarah ,32,saint-remy,saone-et-loire,saint-remy,saone-et-loire,71,6541.0,10.0,636.0,46.77,4.828,6,0.0009172909341079345
+2022-05-09,Gergy,Saône-et-Loire,Audrey ,33,gergy,saone-et-loire,gergy,saone-et-loire,71,2582.0,39.0,66.0,46.876,4.947,6,0.0023237800154918666
+2022-05-08,Grézieu-la-Varenne,Rhône,Nathalie,33,grezieu-la-varenne,rhone,grezieu-la-varenne,rhone,69,6094.0,7.0,814.0,45.748,4.694,15,0.002461437479488021
+2022-05-04,Gratentour,Haute-Garonne,Lili,32,gratentour,haute-garonne,gratentour,haute-garonne,31,4699.0,4.0,1163.0,43.722,1.432,9,0.001915301127899553
+2022-05-02,Champcevinel,Dordogne,Sandra,40,champcevinel,dordogne,champcevinel,dordogne,24,3029.0,18.0,165.0,45.215,0.726,5,0.001650709805216243
+2022-05-01,Vaulx-en-Velin,Rhône,Marie-Reine,36,vaulx-en-velin,rhone,vaulx-en-velin,rhone,69,52139.0,21.0,2480.0,45.779,4.92,15,0.00028769251424077944
+2022-04-26,Épinal,Vosges,Kumrije,44,epinal,vosges,epinal,vosges,88,32285.0,59.0,544.0,48.175,6.45,3,9.292240978782717e-05
+2022-04-15,Amiens,Somme,Jennifer,25,amiens,somme,amiens,somme,80,133625.0,50.0,2668.0,49.894,2.296,5,3.7418147801683815e-05
+2022-04-15,Amiens,Somme,Amelia,26,amiens,somme,amiens,somme,80,133625.0,50.0,2668.0,49.894,2.296,5,3.7418147801683815e-05
+2022-04-22,Boudrac,Haute-Garonne,Kathryn,65,boudrac,haute-garonne,boudrac,haute-garonne,31,150.0,11.0,13.0,43.191,0.527,9,0.06
+2022-04-19,Maisons-Alfort,Val-de-Marne,Véronique,45,maisons-alfort,val-de-marne,maisons-alfort,val-de-marne,94,58068.0,5.0,10834.0,48.801,2.431,6,0.00010332713370531102
+2022-04-15,Pointe-à-Pitre,Guadeloupe,Émilie,25,pointe-a-pitre,guadeloupe,pointe-a-pitre,guadeloupe,971,14486.0,3.0,5306.0,16.241,-61.534,1,6.903216899074968e-05
+2022-04-14,Vaulx-en-Velin,Rhône,Anna,36,vaulx-en-velin,rhone,vaulx-en-velin,rhone,69,52139.0,21.0,2480.0,45.779,4.92,15,0.00028769251424077944
+2022-04-12,Rennes,Ille-et-Vilaine,Marie,45,rennes,ille-et-vilaine,rennes,ille-et-vilaine,35,225081.0,50.0,4470.0,48.112,-1.68,8,3.5542760161897275e-05
+2022-04-07,Saint-Goazec,Finistère,Mélanie,39,saint-goazec,finistere,saint-goazec,finistere,29,721.0,33.0,22.0,48.162,-3.784,7,0.009708737864077669
+2022-04-01,Marseille,Bouches-du-Rhône,– ,77,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2022-04-04,Loisy-sur-Marne,Marne,Nathalie,47,loisy-sur-marne,marne,loisy-sur-marne,marne,51,1119.0,14.0,79.0,48.759,4.543,5,0.004468275245755138
+2022-04-01,Saint-Etienne,Loire,Nadège,44,saint-etienne,loire,saint-etienne,loire,42,172718.0,80.0,2159.0,45.44,4.387,3,1.7369353512662258e-05
+2022-03-23,Versailles,Yvelines,–,51,versailles,yvelines,versailles,yvelines,78,83587.0,26.0,3207.0,48.801,2.13,8,9.570866283034443e-05
+2022-03-26,Levallois-Perret,Hauts-de-Seine,–,66,levallois-perret,hauts-de-seine,levallois-perret,hauts-de-seine,92,68009.0,2.0,28220.0,48.893,2.288,6,8.822361746239469e-05
+2022-03-29,Roubaix,Nord,Farida,50,roubaix,nord,roubaix,nord,59,98892.0,13.0,7475.0,50.691,3.174,15,0.00015168062128382477
+2022-03-22,Villelaure,Vaucluse,–,29,villelaure,vaucluse,villelaure,vaucluse,84,3337.0,18.0,185.0,43.71,5.433,6,0.0017980221756068325
+2022-03-20,Villefranche-de-Lauragais,Haute-Garonne,Dehbia,28,villefranche-de-lauragais,haute-garonne,villefranche-de-lauragais,haute-garonne,31,4990.0,10.0,476.0,43.399,1.719,9,0.0018036072144288577
+2022-03-18,Arriance,Moselle,Monique,75,arriance,moselle,arriance,moselle,57,217.0,7.0,31.0,49.017,6.496,6,0.027649769585253458
+2022-02-07,10e arrondissement,Paris,Beatriz,38,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-03-14,Villefranche-sur-Saône,Rhône,Angélique,27,villefranche-sur-saone,rhone,villefranche-sur-saone,rhone,69,35913.0,9.0,3800.0,45.989,4.715,15,0.0004176760504552669
+2022-03-04,Sainte-Marie,La Réunion,Elise,50,sainte-marie,la reunion,sainte-marie,la reunion,974,34344.0,89.0,387.0,-20.897,55.549,4,0.00011646866992778943
+2022-03-02,Bastia,Haute-Corse,Alessandra,46,bastia,haute-corse,bastia,haute-corse,2B,48768.0,20.0,2467.0,42.702,9.452,5,0.0001025262467191601
+2022-02-13,Mandelieu-la-Napoule,Alpes-Maritimes,Lucia,49,mandelieu-la-napoule,alpes-maritimes,mandelieu-la-napoule,alpes-maritimes,06,21561.0,32.0,672.0,43.543,6.932,8,0.0003710403042530495
+2022-02-17,Marmande,Lot-et-Garonne,Laura,31,marmande,lot-et-garonne,marmande,lot-et-garonne,47,17239.0,45.0,384.0,44.499,0.166,3,0.00017402401531411334
+2022-02-07,Carpentras,Vaucluse,–,69,carpentras,vaucluse,carpentras,vaucluse,84,30769.0,38.0,813.0,44.056,5.049,6,0.00019500146251096883
+2022-02-05,Ruy-Montceau,Isère,–,95,ruy-montceau,isere,ruy-montceau,isere,38,4752.0,21.0,226.0,45.588,5.319,3,0.0006313131313131314
+2022-02-04,Tours,Indre-et-Loire,–,51,tours,indre-et-loire,tours,indre-et-loire,37,137658.0,33.0,4128.0,47.391,0.69,4,2.9057519359572272e-05
+2022-01-31,Châteauneuf-les-Martigues,Bouches-du-Rhône,–,60,chateauneuf-les-martigues,bouches-du-rhone,chateauneuf-les-martigues,bouches-du-rhone,13,17909.0,33.0,547.0,43.383,5.165,18,0.0010050812440672288
+2022-01-28,19e arrondissement,Paris,Amanda,28,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-01-27,Saint-Didier-de-la-Tour,Isère,–,45,saint-didier-de-la-tour,isere,saint-didier-de-la-tour,isere,38,2117.0,15.0,145.0,45.555,5.484,3,0.0014170996693434106
+2022-01-23,Pineuilh,Gironde,Simone,80,pineuilh,gironde,pineuilh,gironde,33,4409.0,17.0,256.0,44.83,0.227,7,0.0015876616012701294
+2022-01-17,Besancon,Doubs,Céline,20,besancon,doubs,besancon,doubs,25,119198.0,65.0,1831.0,47.238,6.024,4,3.355761002701388e-05
+2022-01-14,17e arrondissement,Paris,–,57,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2022-01-14,Roujan,Hérault,Caroline,24,roujan,herault,roujan,herault,34,2260.0,17.0,133.0,43.504,3.31,10,0.004424778761061947
+2022-01-08,Aubervilliers,Seine-Saint-Denis,Elsa-Marie,29,aubervilliers,seine-saint-denis,aubervilliers,seine-saint-denis,93,90071.0,6.0,15610.0,48.915,2.382,15,0.0001665352888277026
+2022-01-01,Labry,Meurthe-et-Moselle,Muriel,56,labry,meurthe-et-moselle,labry,meurthe-et-moselle,54,1575.0,6.0,254.0,49.173,5.882,5,0.0031746031746031746
+2022-01-01,Bellevigne-les-Châteaux,Maine-et-Loire,Éléonore,27,bellevigne-les-chateaux,maine-et-loire,bellevigne-les-chateaux,maine-et-loire,49,3463.0,7.0,527.0,47.214,-0.075,5,0.0014438348252959862
+2023-09-23,Strasbourg,Bas-Rhin,Lina,15,strasbourg,bas-rhin,strasbourg,bas-rhin,67,291313.0,78.0,3730.0,48.573,7.752,3,1.0298201590728872e-05
+2023-12-05,Drancy,Seine-Saint-Denis,–,55,drancy,seine-saint-denis,drancy,seine-saint-denis,93,71363.0,8.0,9173.0,48.923,2.445,15,0.0002101929571346496
+2023-11-30,Amiens,Somme,Doina,31,amiens,somme,amiens,somme,80,133625.0,50.0,2668.0,49.894,2.296,5,3.7418147801683815e-05
+2023-08-30,Velanne,Isère,Danielle,74,velanne,isere,velanne,isere,38,563.0,8.0,69.0,45.488,5.647,3,0.0053285968028419185
+2023-08-09,Lyon,Rhône,Zohra,38,lyon,rhone,lyon,rhone,69,522250.0,48.0,10903.0,45.764,4.836,15,2.8721876495931066e-05
+2023-11-12,Marseille,Bouches-du-Rhône,Mélodie,34,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2023-11-28,Marseille,Bouches-du-Rhône,–,81,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2023-11-24,Abancourt,Nord,Betty ,45,abancourt,nord,abancourt,nord,59,459.0,6.0,80.0,50.235,3.213,15,0.032679738562091505
+2023-09-01,Mory,Pas-de-Calais,Patricia,52,mory,pas-de-calais,mory,pas-de-calais,62,305.0,7.0,41.0,50.158,2.856,8,0.02622950819672131
+2023-11-16,Conie-Molitard,Eure-et-Loir,Claire,42,conie-molitard,eure-et-loir,conie-molitard,eure-et-loir,28,395.0,15.0,26.0,48.113,1.44,4,0.010126582278481013
+2023-11-14,Perpignan,Pyrénées-Orientales,–,38,perpignan,pyrenees-orientales,perpignan,pyrenees-orientales,66,119656.0,68.0,1752.0,42.699,2.894,3,2.5071872701745004e-05
+2023-11-10,Spéracèdes,Alpes-Maritimes,Sophie,50,speracedes,alpes-maritimes,speracedes,alpes-maritimes,06,1176.0,3.0,339.0,43.648,6.858,8,0.006802721088435374
+2023-11-09,Cuincy,Nord,Irène,82,cuincy,nord,cuincy,nord,59,6472.0,7.0,922.0,50.382,3.044,15,0.0023176761433868973
+2023-11-09,Cluses,Haute-Savoie,Jeanine,92,cluses,haute-savoie,cluses,haute-savoie,74,17164.0,10.0,1642.0,46.06,6.581,2,0.00011652295502213937
+2023-10-15,Orconte,Marne,Madison,24,orconte,marne,orconte,marne,51,368.0,14.0,27.0,48.669,4.734,5,0.01358695652173913
+2023-11-08,Montpellier,Hérault,–,80,montpellier,herault,montpellier,herault,34,302454.0,57.0,5296.0,43.598,3.897,10,3.3062878983250344e-05
+2023-10-29,Meurchin,Pas-de-Calais,Chantal,74,meurchin,pas-de-calais,meurchin,pas-de-calais,62,3717.0,5.0,805.0,50.495,2.891,8,0.0021522733387140166
+2023-10-31,Oissel,Seine-Maritime,Jessyca,46,oissel,seine-maritime,oissel,seine-maritime,76,12367.0,22.0,557.0,49.34,1.09,8,0.0006468828333468101
+2023-10-29,Paris (18e),Paris,Giuliana ,37,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-10-28,Grasse,Alpes-Maritimes,Jemima,29,grasse,alpes-maritimes,grasse,alpes-maritimes,06,48323.0,44.0,1091.0,43.658,6.925,8,0.00016555263539101464
+2023-08-22,Montpellier,Hérault,Maeva,28,montpellier,herault,montpellier,herault,34,302454.0,57.0,5296.0,43.598,3.897,10,3.3062878983250344e-05
+2023-10-18,Lille,Nord,Fabienne,68,lille,nord,lille,nord,59,236710.0,35.0,6765.0,50.63,3.071,15,6.336867897427232e-05
+2023-10-12,Lons,Pyrénées-Atlantiques,–,61,lons,pyrenees-atlantiques,lons,pyrenees-atlantiques,64,13915.0,12.0,1210.0,43.316,-0.407,4,0.00028745957599712543
+2023-10-09,Forbach,Moselle,Assunta,85,forbach,moselle,forbach,moselle,57,21130.0,16.0,1284.0,49.186,6.896,6,0.00028395646000946523
+2023-10-09,Charleville-Mézières,Ardennes,–,50,charleville-mezieres,ardennes,charleville-mezieres,ardennes,08,46398.0,32.0,1460.0,49.76,4.72,3,6.46579593948015e-05
+2023-09-26,Primelin,Finistère,Hélène,55,primelin,finistere,primelin,finistere,29,640.0,9.0,74.0,48.025,-4.611,7,0.0109375
+2023-09-28,Nice,Alpes-Maritimes,Édith,88,nice,alpes-maritimes,nice,alpes-maritimes,06,348085.0,74.0,4710.0,43.696,7.272,8,2.2982892109685852e-05
+2023-09-16,Castelmaurou,Haute-Garonne,Mauricette,90,castelmaurou,haute-garonne,castelmaurou,haute-garonne,31,4448.0,17.0,262.0,43.678,1.532,9,0.0020233812949640288
+2023-03-16,Souvigné-sur-Sarthe,Sarthe,Monique,61,souvigne-sur-sarthe,sarthe,souvigne-sur-sarthe,sarthe,72,613.0,17.0,36.0,47.827,-0.388,2,0.0032626427406199023
+2023-09-13,9e arrondissement,Paris,Agnès,78,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-09-02,Yport,Seine-Maritime,Emmanuelle ,57,yport,seine-maritime,yport,seine-maritime,76,709.0,2.0,330.0,49.737,0.314,8,0.011283497884344146
+2023-08-29,Chambray-lès-Tours,Indre-et-Loire,Taghreed,57,chambray-les-tours,indre-et-loire,chambray-les-tours,indre-et-loire,37,11589.0,19.0,597.0,47.339,0.714,4,0.0003451548882561049
+2023-08-26,Sucy-en-Brie,Val-de-Marne,Nacera,53,sucy-en-brie,val-de-marne,sucy-en-brie,val-de-marne,94,27622.0,10.0,2653.0,48.771,2.524,6,0.00021721815943812902
+2023-08-23,Vaux-lès-Saint-Claude,Jura,Dana,26,vaux-les-saint-claude,jura,vaux-les-saint-claude,jura,39,673.0,9.0,72.0,46.357,5.736,2,0.0029717682020802376
+2023-08-13,Dijon,Côte-d'Or,Élodie,34,dijon,cote-d'or,dijon,cote-d'or,21,159346.0,42.0,3831.0,47.322,5.042,2,1.255130345286358e-05
+2023-08-13,8e arrondissement,Paris,Marie-Astrid,39,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-07-13,Diges,Yonne,Agnès,80,diges,yonne,diges,yonne,89,1069.0,36.0,30.0,47.729,3.399,2,0.0018709073900841909
+2023-08-07,Toulouse,Haute-Garonne,Jacqueline,27,toulouse,haute-garonne,toulouse,haute-garonne,31,504078.0,118.0,4269.0,43.605,1.444,9,1.785437967933534e-05
+2023-07-01,Nanterre,Hauts-de-Seine,Cindy,38,nanterre,hauts-de-seine,nanterre,hauts-de-seine,92,97351.0,12.0,7960.0,48.892,2.207,6,6.163264886852729e-05
+2023-08-03,Préchac-sur-Adour,Gers,Sylvie,58,prechac-sur-adour,gers,prechac-sur-adour,gers,32,192.0,4.0,44.0,43.602,-0.003,2,0.010416666666666666
+2023-07-25,Evry-Courcouronnes,Essonne,Kugamany,85,evry-courcouronnes,essonne,evry-courcouronnes,essonne,91,66177.0,9.0,7740.0,48.624,2.429,10,0.00015110990223189325
+2023-07-30,10e arrondissement,Paris,Djeneba,38,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-07-24,Haubourdin,Nord,Madouda,38,haubourdin,nord,haubourdin,nord,59,14757.0,5.0,2698.0,50.611,2.983,15,0.0010164667615368977
+2023-07-21,Marzan,Morbihan,Maïté,32,marzan,morbihan,marzan,morbihan,56,2539.0,34.0,74.0,47.541,-2.326,6,0.0023631350925561244
+2023-06-23,Doudeauville,Pas-de-Calais,Martine,60,doudeauville,pas-de-calais,doudeauville,pas-de-calais,62,618.0,14.0,45.0,50.609,1.831,8,0.012944983818770227
+2023-06-21,Cergy,Val-d'Oise,Nouara,62,cergy,val-d'oise,cergy,val-d'oise,95,68348.0,15.0,4704.0,49.052,2.035,5,7.315503013987242e-05
+2023-06-25,Ouangani,Mayotte,Nadine,33,ouangani,mayotte,ouangani,mayotte,976,10203.0,18.0,558.0,-12.849,45.139,2,0.00019602077820248947
+2023-06-22,Angers,Maine-et-Loire,Adélaïde ,40,angers,maine-et-loire,angers,maine-et-loire,49,157175.0,44.0,3546.0,47.471,-0.548,5,3.1811674884682675e-05
+2023-06-21,Grand-Couronne,Seine-Maritime,Aicha,40,grand-couronne,seine-maritime,grand-couronne,seine-maritime,76,9726.0,17.0,575.0,49.358,1.008,8,0.0008225375282747275
+2023-06-26,Lavaur,Tarn,Brigitte,58,lavaur,tarn,lavaur,tarn,81,10830.0,63.0,172.0,43.7,1.821,1,9.233610341643582e-05
+2023-06-13,Migné-Auxances,Vienne,Karima,47,migne-auxances,vienne,migne-auxances,vienne,86,6197.0,29.0,214.0,46.628,0.31,4,0.0006454736162659351
+2023-06-09,Lyon,Rhône,Alicia,18,lyon,rhone,lyon,rhone,69,522250.0,48.0,10903.0,45.764,4.836,15,2.8721876495931066e-05
+2023-06-17,Meulan-en-Yvelines,Yvelines,Julie,29,meulan-en-yvelines,yvelines,meulan-en-yvelines,yvelines,78,9041.0,3.0,2628.0,49.005,1.91,8,0.0008848578697046787
+2023-05-24,Dreux,Eure-et-Loir,Sélina,13,dreux,eure-et-loir,dreux,eure-et-loir,28,30879.0,24.0,1272.0,48.736,1.371,4,0.00012953787363580426
+2023-06-03,Saint-Priest,Rhône,Nathalie ,48,saint-priest,rhone,saint-priest,rhone,69,48822.0,30.0,1646.0,45.695,4.936,15,0.0003072385400024579
+2023-06-01,Montaigu-Vendée,Vendée,Aline,39,montaigu-vendee,vendee,montaigu-vendee,vendee,85,20605.0,3.0,6756.0,46.974,-1.314,5,0.0002426595486532395
+2023-05-27,Lanester,Morbihan,Iris,24,lanester,morbihan,lanester,morbihan,56,23026.0,16.0,1419.0,47.764,-3.347,6,0.00026057500217145836
+2023-05-27,Montpellier,Hérault,Marie,72,montpellier,herault,montpellier,herault,34,302454.0,57.0,5296.0,43.598,3.897,10,3.3062878983250344e-05
+2023-05-25,Dreux,Eure-et-Loir,Cagla,36,dreux,eure-et-loir,dreux,eure-et-loir,28,30879.0,24.0,1272.0,48.736,1.371,4,0.00012953787363580426
+2023-05-26,Sanary-sur-Mer,Var,Eliane,95,sanary-sur-mer,var,sanary-sur-mer,var,83,17268.0,20.0,871.0,43.118,5.802,10,0.0005791058605513088
+2023-05-14,Laloubère,Hautes-Pyrénées,Audrey ,41,laloubere,hautes-pyrenees,laloubere,hautes-pyrenees,65,1869.0,4.0,459.0,43.205,0.073,4,0.002140181915462814
+2023-05-13,Saint-Dionisy,Gard,Laura,27,saint-dionisy,gard,saint-dionisy,gard,30,1085.0,3.0,316.0,43.805,4.228,4,0.003686635944700461
+2023-05-11,Lys-lez-Lannoy,Nord,Giovanna,41,lys-lez-lannoy,nord,lys-lez-lannoy,nord,59,13793.0,3.0,4231.0,50.67,3.215,15,0.0010875081563111724
+2023-02-23,Erdeven,Morbihan,Nadine,63,erdeven,morbihan,erdeven,morbihan,56,3974.0,31.0,130.0,47.642,-3.156,6,0.001509813789632612
+2023-01-24,Digne-les-Bains,Alpes-de-Haute-Provence,Manon,22,digne-les-bains,alpes-de-haute-provence,digne-les-bains,alpes-de-haute-provence,04,17192.0,110.0,157.0,44.094,6.235,1,5.816658911121452e-05
+2023-04-29,Dun-sur-Auron,Cher,Corinne,64,dun-sur-auron,cher,dun-sur-auron,cher,18,3572.0,50.0,72.0,46.888,2.572,1,0.0002799552071668533
+2023-01-28,Argol,Finistère,Héléna,20,argol,finistere,argol,finistere,29,1021.0,32.0,32.0,48.246,-4.318,7,0.0068560235063663075
+2023-04-25,Rambervillers,Vosges,Rose,5,rambervillers,vosges,rambervillers,vosges,88,5045.0,21.0,244.0,48.347,6.635,3,0.0005946481665014867
+2023-04-06,Marseille,Bouches-du-Rhône,Sandra,36,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2023-03-22,Lagardelle,Lot,Francisca,47,lagardelle,lot,lagardelle,lot,46,129.0,3.0,41.0,44.493,1.17,1,0.007751937984496124
+2023-03-20,12e arrondissement,Paris,Cécile,48,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-03-16,Ronquerolles,Val-d'Oise,Mathilda,34,ronquerolles,val-d'oise,ronquerolles,val-d'oise,95,882.0,5.0,185.0,49.168,2.22,5,0.005668934240362812
+2023-03-13,Lamothe-Capdeville,Tarn-et-Garonne,Isabelle ,36,lamothe-capdeville,tarn-et-garonne,lamothe-capdeville,tarn-et-garonne,82,1053.0,12.0,88.0,44.075,1.37,3,0.002849002849002849
+2023-03-09,Béthune,Pas-de-Calais,Nadège,48,bethune,pas-de-calais,bethune,pas-de-calais,62,24992.0,10.0,2631.0,50.531,2.639,8,0.0003201024327784891
+2023-03-06,Poitiers,Vienne,Hadas,39,poitiers,vienne,poitiers,vienne,86,90240.0,42.0,2128.0,46.58,0.341,4,4.4326241134751776e-05
+2023-03-03,Coulans-sur-Gée,Sarthe,Nelly,50,coulans-sur-gee,sarthe,coulans-sur-gee,sarthe,72,1633.0,27.0,59.0,48.02,0.011,2,0.001224739742804654
+2023-03-03,Amiens,Somme,Fathia/Fatiha,27,amiens,somme,amiens,somme,80,133625.0,50.0,2668.0,49.894,2.296,5,3.7418147801683815e-05
+2023-03-02,Melun,Seine-et-Marne,Nacera,53,melun,seine-et-marne,melun,seine-et-marne,77,42367.0,8.0,5296.0,48.54,2.661,5,0.0001180163806736375
+2023-02-24,Prunelli-di-Fiumorbo,Haute-Corse,Élisa,24,prunelli-di-fiumorbo,haute-corse,prunelli-di-fiumorbo,haute-corse,2B,3737.0,38.0,99.0,42.011,9.325,5,0.001337971635001338
+2023-02-22,Cabriès,Bouches-du-Rhône, Marie-Antoinette,75,cabries,bouches-du-rhone,cabries,bouches-du-rhone,13,10070.0,37.0,275.0,43.441,5.38,18,0.0017874875868917578
+2023-02-14,19e arrondissement,Paris,Assia,46,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-02-16,Montpellier,Hérault,Sophie,47,montpellier,herault,montpellier,herault,34,302454.0,57.0,5296.0,43.598,3.897,10,3.3062878983250344e-05
+2023-02-14,Lisieux,Calvados,Laure,28,lisieux,calvados,lisieux,calvados,14,19807.0,13.0,1526.0,49.146,0.228,3,0.0001514616044832635
+2023-02-13,Sevran,Seine-Saint-Denis,Neda/Valéria/Valéryia,51,sevran,seine-saint-denis,sevran,seine-saint-denis,93,51845.0,7.0,7102.0,48.94,2.526,15,0.0002893239463786286
+2023-02-08,Yvetot,Seine-Maritime,Séverine,43,yvetot,seine-maritime,yvetot,seine-maritime,76,11385.0,7.0,1522.0,49.616,0.756,8,0.0007026789635485288
+2023-02-12,Bondy,Seine-Saint-Denis,Flora,34,bondy,seine-saint-denis,bondy,seine-saint-denis,93,52905.0,5.0,9672.0,48.902,2.481,15,0.0002835270768358378
+2023-02-06,Gujan-Mestras,Gironde,Laurence ,47,gujan-mestras,gironde,gujan-mestras,gironde,33,22399.0,50.0,446.0,44.636,-1.071,7,0.0003125139515156927
+2023-01-28,Limoges,Haute-Vienne,Magdalena,29,limoges,haute-vienne,limoges,haute-vienne,87,129760.0,80.0,1628.0,45.826,1.26,3,2.311960542540074e-05
+2023-01-19,18e arrondissement,Paris,Catherine ,46,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2023-01-27,Saint-Etienne-du-Rouvray,Seine-Maritime,Mongia,73,saint-etienne-du-rouvray,seine-maritime,saint-etienne-du-rouvray,seine-maritime,76,28508.0,18.0,1563.0,49.38,1.108,8,0.0002806229830223095
+2023-01-24,Lempdes,Puy-de-Dôme,Eva,20,lempdes,puy-de-dome,lempdes,puy-de-dome,63,8663.0,12.0,706.0,45.768,3.198,2,0.0002308669052291354
+2023-01-22,Saint-Brieuc,Côtes-d'Armor,Angélique,22,saint-brieuc,cotes-d'armor,saint-brieuc,cotes-d'armor,22,44224.0,19.0,2278.0,48.514,-2.764,4,9.044862518089724e-05
+2023-01-22,Pont-Péan,Ille-et-Vilaine,Catherine,47,pont-pean,ille-et-vilaine,pont-pean,ille-et-vilaine,35,4335.0,9.0,495.0,48.011,-1.706,8,0.001845444059976932
+2023-01-18,Malakoff,Hauts-de-Seine,Virginie,46,malakoff,hauts-de-seine,malakoff,hauts-de-seine,92,30292.0,2.0,14634.0,48.821,2.302,6,0.00019807209824376074
+2024-10-05,Charleville-Mézières,Ardennes,–,22,charleville-mezieres,ardennes,charleville-mezieres,ardennes,08,46398.0,32.0,1460.0,49.76,4.72,3,6.46579593948015e-05
+2024-06-21,Urrugne,Pyrénées-Atlantiques,Laure,43,urrugne,pyrenees-atlantiques,urrugne,pyrenees-atlantiques,64,10543.0,52.0,201.0,43.362,-1.7,4,0.00037939865313478137
+2024-12-10,Avignon,Vaucluse,Barbara,24,avignon,vaucluse,avignon,vaucluse,84,90330.0,65.0,1392.0,43.949,4.805,6,6.642311524410495e-05
+2024-07-06,15e arrondissement,Paris,–,38,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-01-13,17e arrondissement,Paris,Maria Rita,43,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-12-25,Sissy,Aisne,–,70,sissy,aisne,sissy,aisne,02,474.0,11.0,44.0,49.803,3.433,4,0.008438818565400843
+2024-12-21,Montjoire,Haute-Garonne,–,70,montjoire,haute-garonne,montjoire,haute-garonne,31,1280.0,20.0,63.0,43.771,1.534,9,0.00703125
+2024-12-20,Saint-Jean-de-Monts,Vendée,Samira,47,saint-jean-de-monts,vendee,saint-jean-de-monts,vendee,85,8741.0,62.0,140.0,46.792,-2.064,5,0.0005720169317011784
+2024-12-17,Draveil,Essonne,–,51,draveil,essonne,draveil,essonne,91,29173.0,16.0,1831.0,48.682,2.405,10,0.00034278271004010557
+2024-12-13,Isle,Haute-Vienne,Inès,15,isle,haute-vienne,isle,haute-vienne,87,7853.0,20.0,391.0,45.805,1.224,3,0.00038201961033999744
+2024-12-02,Toulouse,Haute-Garonne,Lison,23,toulouse,haute-garonne,toulouse,haute-garonne,31,504078.0,118.0,4269.0,43.605,1.444,9,1.785437967933534e-05
+2024-12-02,Aulnay-sous-Bois,Seine-Saint-Denis,Adja,29,aulnay-sous-bois,seine-saint-denis,aulnay-sous-bois,seine-saint-denis,93,86135.0,16.0,5337.0,48.934,2.5,15,0.00017414523712776456
+2024-11-30,Ris-Orangis,Essonne,–,94,ris-orangis,essonne,ris-orangis,essonne,91,29825.0,8.0,3555.0,48.654,2.416,10,0.00033528918692372173
+2024-07-12,Beaucourt,Territoire de Belfort,Agnès,57,beaucourt,territoire de belfort,beaucourt,territoire de belfort,90,5005.0,5.0,1026.0,47.487,6.925,2,0.0003996003996003996
+2024-11-19,Blois,Loir-et-Cher,Odile,81,blois,loir-et-cher,blois,loir-et-cher,41,46813.0,38.0,1248.0,47.589,1.337,3,6.408476277956978e-05
+2024-05-28,Monsireigne,Vendée,–,37,monsireigne,vendee,monsireigne,vendee,85,972.0,21.0,46.0,46.744,-0.949,5,0.0051440329218107
+2024-11-12,Pertuis,Vaucluse,–,84,pertuis,vaucluse,pertuis,vaucluse,84,20012.0,59.0,338.0,43.695,5.503,6,0.00029982010793523883
+2024-11-10,Angers,Maine-et-Loire,–,80,angers,maine-et-loire,angers,maine-et-loire,49,157175.0,44.0,3546.0,47.471,-0.548,5,3.1811674884682675e-05
+2024-07-30,Mayenne,Mayenne,Hadjer,37,mayenne,mayenne,mayenne,mayenne,53,12900.0,20.0,639.0,48.306,-0.621,3,0.00023255813953488373
+2024-07-24,Saint-Laurent-du-Maroni,Guyane,Charmaine,31,saint-laurent-du-maroni,guyane,saint-laurent-du-maroni,guyane,973,50250.0,4151.0,12.0,5.504,-54.029,3,5.9701492537313435e-05
+2024-11-10,Marmagne,Saône-et-Loire,Isabelle,65,marmagne,saone-et-loire,marmagne,saone-et-loire,71,1266.0,31.0,41.0,46.837,4.357,6,0.004739336492890996
+2024-11-04,Doullens,Somme,Louane,19,doullens,somme,doullens,somme,80,5835.0,33.0,176.0,50.157,2.341,5,0.000856898029134533
+2024-11-02,Louveciennes,Yvelines,Samantha ,54,louveciennes,yvelines,louveciennes,yvelines,78,7563.0,5.0,1388.0,48.862,2.112,8,0.001057781303715457
+2024-10-24,Emerainville,Seine-et-Marne,Juliana,41,emerainville,seine-et-marne,emerainville,seine-et-marne,77,7601.0,5.0,1423.0,48.812,2.621,5,0.0006578081831337982
+2024-10-20,Villepinte,Seine-Saint-Denis,–,83,villepinte,seine-saint-denis,villepinte,seine-saint-denis,93,38725.0,10.0,3716.0,48.964,2.534,15,0.00038734667527437055
+2024-10-20,Rouen,Seine-Maritime,Héloïse,17,rouen,seine-maritime,rouen,seine-maritime,76,114083.0,21.0,5326.0,49.444,1.1,8,7.01243831245672e-05
+2024-10-19,Trélissac,Dordogne,–,90,trelissac,dordogne,trelissac,dordogne,24,7268.0,24.0,302.0,45.196,0.781,5,0.0006879471656576775
+2024-10-17,Momy,Pyrénées-Atlantiques,–,45,momy,pyrenees-atlantiques,momy,pyrenees-atlantiques,64,112.0,6.0,19.0,43.396,-0.11,4,0.03571428571428571
+2024-10-12,Saint-Pantaléon-de-Larche,Corrèze,Tugba,39,saint-pantaleon-de-larche,correze,saint-pantaleon-de-larche,correze,19,4883.0,24.0,206.0,45.141,1.447,1,0.00020479213598197828
+2024-09-08,Artigues,Var,–,61,artigues,var,artigues,var,83,288.0,33.0,9.0,43.593,5.812,10,0.034722222222222224
+2024-10-01,Aubervilliers,Seine-Saint-Denis,Becky,40,aubervilliers,seine-saint-denis,aubervilliers,seine-saint-denis,93,90071.0,6.0,15610.0,48.915,2.382,15,0.0001665352888277026
+2024-09-21,16e arrondissement,Paris,Philippine,19,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-09-16,Rosny-Sous-Bois,Seine-Saint-Denis,-,26,rosny-sous-bois,seine-saint-denis,rosny-sous-bois,seine-saint-denis,93,45655.0,6.0,7712.0,48.872,2.488,15,0.0003285510896944475
+2024-09-14,Carvin,Pas-de-Calais,Peggy,43,carvin,pas-de-calais,carvin,pas-de-calais,62,17852.0,21.0,843.0,50.491,2.958,8,0.00044812906116961686
+2024-09-14,Cormontreuil,Marne,–,46,cormontreuil,marne,cormontreuil,marne,51,6456.0,5.0,1377.0,49.224,4.054,5,0.0007744733581164808
+2024-09-10,Chanteloup-les-Vignes,Yvelines,–,84,chanteloup-les-vignes,yvelines,chanteloup-les-vignes,yvelines,78,10735.0,3.0,3148.0,48.978,2.03,8,0.0007452258965999068
+2024-09-09,Limeil-Brévannes,Val-de-Marne,–,27,limeil-brevannes,val-de-marne,limeil-brevannes,val-de-marne,94,27999.0,7.0,4017.0,48.749,2.48,6,0.00021429336762027214
+2024-09-07,Mormant,Seine-et-Marne,–,36,mormant,seine-et-marne,mormant,seine-et-marne,77,5222.0,17.0,316.0,48.606,2.89,5,0.0009574875526618154
+2024-08-30,Rueil-Malmaison,Hauts-de-Seine,–,79,rueil-malmaison,hauts-de-seine,rueil-malmaison,hauts-de-seine,92,78186.0,15.0,5381.0,48.878,2.181,6,7.674008134448623e-05
+2024-08-27,Beaujeu,Rhône,–,65,beaujeu,rhone,beaujeu,rhone,69,2123.0,18.0,119.0,46.154,4.587,15,0.00706547338671691
+2024-08-28,Metz,Moselle,Vanessa,42,metz,moselle,metz,moselle,57,120874.0,42.0,2898.0,49.12,6.176,6,4.9638466502308186e-05
+2025-08-13,11e arrondissement,Paris,Mme S,60,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-08-04,Saint-Aubert,Nord,Dominique,66,saint-aubert,nord,saint-aubert,nord,59,1561.0,8.0,192.0,50.206,3.416,15,0.009609224855861628
+2024-08-25,Bousbecque,Nord,Elise ,37,bousbecque,nord,bousbecque,nord,59,4847.0,6.0,750.0,50.772,3.077,15,0.0030946977511863006
+2024-08-24,Haveluy,Nord,Marie-Louise,66,haveluy,nord,haveluy,nord,59,3250.0,5.0,684.0,50.355,3.403,15,0.004615384615384616
+2024-08-16,Saint-Héand,Loire,Thérèse,84,saint-heand,loire,saint-heand,loire,42,3686.0,31.0,119.0,45.529,4.373,3,0.0008138903960933261
+2024-08-12,Douai,Nord,–,71,douai,nord,douai,nord,59,39648.0,17.0,2343.0,50.368,3.08,15,0.00037832929782082324
+2024-08-12,18e arrondissement,Paris,Noémie,21,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-07-27,Baron-sur-Odon,Calvados,Martine ,69,baron-sur-odon,calvados,baron-sur-odon,calvados,14,1055.0,6.0,163.0,49.133,-0.479,3,0.002843601895734597
+2024-07-26,Clapiers,Hérault,–,21,clapiers,herault,clapiers,herault,34,5811.0,8.0,759.0,43.657,3.888,10,0.0017208742040956805
+2024-07-25,Noël-Cerneux,Doubs,Béatrice,47,noel-cerneux,doubs,noel-cerneux,doubs,25,456.0,6.0,72.0,47.1,6.664,4,0.008771929824561403
+2024-07-22,Saint-Nazaire,Loire-Atlantique,Alexandra,35,saint-nazaire,loire-atlantique,saint-nazaire,loire-atlantique,44,72057.0,48.0,1497.0,47.273,-2.214,4,5.551160886520393e-05
+2024-07-18,Bobigny,Seine-Saint-Denis,Romdhana,58,bobigny,seine-saint-denis,bobigny,seine-saint-denis,93,55056.0,7.0,8169.0,48.906,2.445,15,0.00027244986922406276
+2024-07-06,Arras,Pas-de-Calais,Sylvie ,58,arras,pas-de-calais,arras,pas-de-calais,62,42600.0,12.0,3571.0,50.293,2.779,8,0.00018779342723004695
+2024-07-12,Rennes,Ille-et-Vilaine,Pauline,33,rennes,ille-et-vilaine,rennes,ille-et-vilaine,35,225081.0,50.0,4470.0,48.112,-1.68,8,3.5542760161897275e-05
+2024-07-06,Niort,Deux-Sèvres,Jennifer/Nneoma,27,niort,deux-sevres,niort,deux-sevres,79,59309.0,68.0,868.0,46.324,-0.465,2,3.372169485238328e-05
+2024-06-27,Toulouse,Haute-Garonne,–,97,toulouse,haute-garonne,toulouse,haute-garonne,31,504078.0,118.0,4269.0,43.605,1.444,9,1.785437967933534e-05
+2024-07-09,16e arrondissement,Paris,Geraldine,30,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-07-05,Compiègne,Oise,Angelina,55,compiegne,oise,compiegne,oise,60,40394.0,53.0,760.0,49.418,2.826,2,4.9512303807496165e-05
+2024-06-28,Chambéry,Savoie,–,89,chambery,savoie,chambery,savoie,73,59856.0,21.0,2822.0,45.566,5.921,2,3.3413525795241913e-05
+2024-02-22,Chênex,Haute-Savoie,Angela,40,chenex,haute-savoie,chenex,haute-savoie,74,799.0,5.0,149.0,46.106,5.994,2,0.0025031289111389237
+2024-06-09,Férin,Nord,Lysiane,82,ferin,nord,ferin,nord,59,1447.0,6.0,261.0,50.328,3.073,15,0.010366275051831375
+2024-06-07,Fréjus,Var,–,25,frejus,var,frejus,var,83,57082.0,105.0,543.0,43.433,6.737,10,0.00017518657370099155
+2024-06-03,Nommay,Doubs,–,57,nommay,doubs,nommay,doubs,25,1606.0,3.0,499.0,47.538,6.847,4,0.0024906600249066002
+2024-06-03,Gisy-les-Nobles,Yonne,–,77,gisy-les-nobles,yonne,gisy-les-nobles,yonne,89,566.0,11.0,51.0,48.28,3.243,2,0.0035335689045936395
+2024-06-02,Dommartin-lès-Toul,Meurthe-et-Moselle,–,39,dommartin-les-toul,meurthe-et-moselle,dommartin-les-toul,meurthe-et-moselle,54,1934.0,7.0,283.0,48.671,5.91,5,0.0025853154084798345
+2024-05-28,Monflanquin,Lot-et-Garonne,–,63,monflanquin,lot-et-garonne,monflanquin,lot-et-garonne,47,2350.0,62.0,38.0,44.533,0.768,3,0.001276595744680851
+2024-05-27,Torcy,Pas-de-Calais,Pascaline,33,torcy,pas-de-calais,torcy,pas-de-calais,62,174.0,5.0,33.0,50.482,2.022,8,0.04597701149425287
+2024-05-17,Riedisheim,Haut-Rhin,Nadège,33,riedisheim,haut-rhin,riedisheim,haut-rhin,68,12163.0,7.0,1753.0,47.749,7.368,4,0.000328866233659459
+2024-05-13,12e arrondissement,Paris,–,75,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-05-11,Antibes,Alpes-Maritimes,–,30,antibes,alpes-maritimes,antibes,alpes-maritimes,06,75130.0,27.0,2784.0,43.581,7.128,8,0.00010648209769732464
+2024-05-03,Saint-Jean-de-Luz,Pyrénées-Atlantiques,–,34,saint-jean-de-luz,pyrenees-atlantiques,saint-jean-de-luz,pyrenees-atlantiques,64,14601.0,20.0,749.0,43.388,-1.664,4,0.00027395383877816586
+2024-04-20,Cayenne,Guyane,–,16,cayenne,guyane,cayenne,guyane,973,63468.0,31.0,2063.0,4.938,-52.335,3,4.726791453961051e-05
+2024-04-17,Macouria,Guyane,Yasmine ,24,macouria,guyane,macouria,guyane,973,18847.0,309.0,61.0,5.014,-52.474,3,0.00015917652676818592
+2024-04-08,Lectoure,Gers,Corinne,60,lectoure,gers,lectoure,gers,32,3690.0,86.0,43.0,43.934,0.624,2,0.0005420054200542005
+2024-03-23,9e arrondissement,Paris,–,75,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-01-25,Ibos,Hautes-Pyrénées,Emeline,26,ibos,hautes-pyrenees,ibos,hautes-pyrenees,65,2919.0,33.0,88.0,43.233,0.001,4,0.0013703323055841042
+2024-03-29,Mirecourt,Vosges,Claude,60,mirecourt,vosges,mirecourt,vosges,88,4782.0,12.0,393.0,48.302,6.134,3,0.0006273525721455458
+2024-03-27,Rantigny,Oise,Shanon,13,rantigny,oise,rantigny,oise,60,2539.0,4.0,607.0,49.33,2.44,2,0.0007877116975187081
+2024-03-22,11e arrondissement,Paris,Alexandra ,36,paris,paris,paris,paris,75,2133111.0,105.0,20238.0,48.857,2.352,22,1.0313574867880762e-05
+2024-03-24,Prunelli-di-Fiumorbo,Haute-Corse,Jeannette,88,prunelli-di-fiumorbo,haute-corse,prunelli-di-fiumorbo,haute-corse,2B,3737.0,38.0,99.0,42.011,9.325,5,0.001337971635001338
+2024-03-14,Montigny-lès-Metz,Moselle,–,31,montigny-les-metz,moselle,montigny-les-metz,moselle,57,21854.0,7.0,3262.0,49.1,6.153,6,0.00027454928159604647
+2024-03-15,Marseille,Bouches-du-Rhône,–,85,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2024-03-11,Gerstheim,Bas-Rhin,–,55,gerstheim,bas-rhin,gerstheim,bas-rhin,67,3463.0,18.0,194.0,48.382,7.698,3,0.0008663008951775916
+2024-01-28,Beussent,Pas-de-Calais,Alicia,28,beussent,pas-de-calais,beussent,pas-de-calais,62,541.0,16.0,34.0,50.546,1.795,8,0.014787430683918669
+2024-02-01,Saint-Paul-de-Fenouillet,Pyrénées-Orientales,–,35,saint-paul-de-fenouillet,pyrenees-orientales,saint-paul-de-fenouillet,pyrenees-orientales,66,1757.0,44.0,40.0,42.811,2.503,3,0.001707455890722823
+2024-02-26,Cagnes-sur-Mer,Alpes-Maritimes,Gigi,44,cagnes-sur-mer,alpes-maritimes,cagnes-sur-mer,alpes-maritimes,06,52580.0,18.0,2887.0,43.664,7.149,8,0.0001521491061240015
+2024-02-22,Chilly-Mazarin,Essonne,Mailyss,18,chilly-mazarin,essonne,chilly-mazarin,essonne,91,19938.0,6.0,3535.0,48.702,2.312,10,0.0005015548199418196
+2024-02-20,Montpellier,Hérault,Marie-Pierre,66,montpellier,herault,montpellier,herault,34,302454.0,57.0,5296.0,43.598,3.897,10,3.3062878983250344e-05
+2024-02-19,Montfermeil,Seine-Saint-Denis,Hayatte,38,montfermeil,seine-saint-denis,montfermeil,seine-saint-denis,93,27980.0,5.0,5172.0,48.902,2.571,15,0.000536097212294496
+2024-02-17,Vénissieux,Rhône,Emma,24,venissieux,rhone,venissieux,rhone,69,66363.0,15.0,4318.0,45.697,4.886,15,0.00022602956466705846
+2024-02-15,Antisanti,Haute-Corse,Marie-Antoinette,86,antisanti,haute-corse,antisanti,haute-corse,2B,568.0,48.0,12.0,42.167,9.346,5,0.008802816901408451
+2024-01-13,Bain-de-Bretagne,Ille-et-Vilaine,–,15,bain-de-bretagne,ille-et-vilaine,bain-de-bretagne,ille-et-vilaine,35,7570.0,66.0,115.0,47.843,-1.683,8,0.0010568031704095112
+2024-01-28,Grimaud,Var,Lauren,29,grimaud,var,grimaud,var,83,4527.0,45.0,101.0,43.274,6.522,10,0.002208968411751712
+2024-02-14,Fort-de-France,Martinique,Loréna,22,fort-de-france,martinique,fort-de-france,martinique,972,74921.0,44.0,1721.0,14.607,-61.07,2,2.6694785173716313e-05
+2024-02-11,Sainte-Foy-lès-Lyon,Rhône,Cynthia,45,sainte-foy-les-lyon,rhone,sainte-foy-les-lyon,rhone,69,21858.0,7.0,3196.0,45.736,4.8,15,0.0006862475981334065
+2024-02-06,Puget-sur-Argens,Var,–,95,puget-sur-argens,var,puget-sur-argens,var,83,8195.0,27.0,304.0,43.457,6.683,10,0.0012202562538133007
+2024-02-05,Marignane,Bouches-du-Rhône,–,76,marignane,bouches-du-rhone,marignane,bouches-du-rhone,13,33003.0,24.0,1401.0,43.417,5.216,18,0.000545404963185165
+2024-02-04,Saint-Raphaël,Var,–,77,saint-raphael,var,saint-raphael,var,83,35950.0,91.0,395.0,43.425,6.768,10,0.0002781641168289291
+2024-02-04,Vincelles,Saône-et-Loire,Édith,54,vincelles,saone-et-loire,vincelles,saone-et-loire,71,439.0,6.0,78.0,46.659,5.236,6,0.01366742596810934
+2024-02-02,Sanary-sur-Mer,Var,–,64,sanary-sur-mer,var,sanary-sur-mer,var,83,17268.0,20.0,871.0,43.118,5.802,10,0.0005791058605513088
+2024-01-26,Marseille,Bouches-du-Rhône,–,72,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2024-01-23,Bretoncelles,Orne,Magali,52,bretoncelles,orne,bretoncelles,orne,61,1469.0,40.0,36.0,48.432,0.888,2,0.0013614703880190605
+2024-01-17,Nogent-le-Roi,Eure-et-Loir,Brigitte ,63,nogent-le-roi,eure-et-loir,nogent-le-roi,eure-et-loir,28,3982.0,13.0,301.0,48.648,1.531,4,0.0010045203415369162
+2024-01-15,Saint-Herblain,Loire-Atlantique,–,28,saint-herblain,loire-atlantique,saint-herblain,loire-atlantique,44,49537.0,30.0,1656.0,47.211,-1.648,4,8.074772392353191e-05
+2024-01-07,Décines-Charpieu,Rhône,–,29,decines-charpieu,rhone,decines-charpieu,rhone,69,29731.0,17.0,1746.0,45.768,4.957,15,0.0005045238976152837
+2024-01-12,Saint-Mandrier-sur-Mer,Var,–,56,saint-mandrier-sur-mer,var,saint-mandrier-sur-mer,var,83,6079.0,5.0,1147.0,43.077,5.929,10,0.0016450074025333114
+2024-01-11,Brassac,Tarn-et-Garonne,Leïla ,50,brassac,tarn-et-garonne,brassac,tarn-et-garonne,82,250.0,20.0,12.0,44.214,0.973,3,0.012
+2024-01-09,Mamoudzou (M'tsapéré),Mayotte,Asmina,29,mamoudzou,mayotte,mamoudzou,mayotte,976,71437.0,42.0,1687.0,-12.781,45.232,2,2.7996696389826e-05
+2024-01-05,Toulouse,Haute-Garonne,Louane,16,toulouse,haute-garonne,toulouse,haute-garonne,31,504078.0,118.0,4269.0,43.605,1.444,9,1.785437967933534e-05
+2024-01-03,Vinon-sur-Verdon,Var,Ghislaine,75,vinon-sur-verdon,var,vinon-sur-verdon,var,83,4333.0,36.0,120.0,43.726,5.813,10,0.0023078698361412415
+2024-01-02,Nègrepelisse,Tarn-et-Garonne,Martine,62,negrepelisse,tarn-et-garonne,negrepelisse,tarn-et-garonne,82,5743.0,49.0,117.0,44.075,1.522,3,0.0005223750652968832
+2025-08-30,Guyancourt,Yvelines,,58,guyancourt,yvelines,guyancourt,yvelines,78,29406.0,13.0,2219.0,48.771,2.07,8,0.0002720533224512004
+2025-08-15,Colombes,Hauts-de-Seine,–,,colombes,hauts-de-seine,colombes,hauts-de-seine,92,88870.0,8.0,11423.0,48.922,2.254,6,6.751434679869472e-05
+2025-08-12,Melun,Seine-et-Marne,–,72,melun,seine-et-marne,melun,seine-et-marne,77,42367.0,8.0,5296.0,48.54,2.661,5,0.0001180163806736375
+2025-08-09,Saint-Jouan-des-Guérets,Ille-et-Vilaine,Tatiana,36,saint-jouan-des-guerets,ille-et-vilaine,saint-jouan-des-guerets,ille-et-vilaine,35,2801.0,9.0,305.0,48.599,-1.972,8,0.002856122813280971
+2025-08-03,Martigues,Bouches-du-Rhône,–,43,martigues,bouches-du-rhone,martigues,bouches-du-rhone,13,48568.0,74.0,652.0,43.406,5.048,18,0.0003706143963103278
+2025-07-30,Tarbes,Hautes-Pyrénées,–,58,tarbes,hautes-pyrenees,tarbes,hautes-pyrenees,65,43955.0,15.0,2867.0,43.233,0.078,4,9.10021613013309e-05
+2025-08-06,Panazol,Haute-Vienne,–,45,panazol,haute-vienne,panazol,haute-vienne,87,11064.0,20.0,552.0,45.837,1.306,3,0.00027114967462039046
+2025-07-30,Saint-Pierre,La Réunion,–,45,saint-pierre,la reunion,saint-pierre,la reunion,974,84077.0,96.0,873.0,-21.342,55.478,4,4.757543680197914e-05
+2025-07-19,Tours,Indre-et-Loire,–,96,tours,indre-et-loire,tours,indre-et-loire,37,137658.0,33.0,4128.0,47.391,0.69,4,2.9057519359572272e-05
+2025-07-15,Vannes,Morbihan,–,75,vannes,morbihan,vannes,morbihan,56,54420.0,33.0,1638.0,47.658,-2.761,6,0.00011025358324145535
+2025-07-17,Quimper,Finistère,–,40,quimper,finistere,quimper,finistere,29,63642.0,84.0,755.0,47.996,-4.102,7,0.0001099902580057195
+2025-07-11,Cossé-le-Vivien,Mayenne,Gaëtane,30,cosse-le-vivien,mayenne,cosse-le-vivien,mayenne,53,3246.0,45.0,72.0,47.945,-0.913,3,0.0009242144177449168
+2025-07-10,Châteaurenard,Bouches-du-Rhône,–,87,chateaurenard,bouches-du-rhone,chateaurenard,bouches-du-rhone,13,16669.0,35.0,478.0,43.882,4.856,18,0.0010798488211650368
+2025-07-09,Moulis-en-Médoc,Gironde,Nelly,43,moulis-en-medoc,gironde,moulis-en-medoc,gironde,33,1908.0,21.0,92.0,45.06,-0.768,7,0.003668763102725367
+2025-06-22,Argenteuil,Val-d'Oise,–,63,argenteuil,val-d'oise,argenteuil,val-d'oise,95,107221.0,17.0,6169.0,48.948,2.249,5,4.6632655916285055e-05
+2025-06-29,Avignon,Vaucluse,Jessica,37,avignon,vaucluse,avignon,vaucluse,84,90330.0,65.0,1392.0,43.949,4.805,6,6.642311524410495e-05
+2025-06-27,Belfort,Territoire de Belfort,Nathalie,51,belfort,territoire de belfort,belfort,territoire de belfort,90,45155.0,17.0,2644.0,47.638,6.863,2,4.4291883512346366e-05
+2025-05-31,Libourne,Gironde,–,48,libourne,gironde,libourne,gironde,33,24557.0,21.0,1187.0,44.914,-0.245,7,0.00028505110559107384
+2025-06-20,Gagny,Seine-Saint-Denis,–,55,gagny,seine-saint-denis,gagny,seine-saint-denis,93,40189.0,7.0,5749.0,48.885,2.537,15,0.0003732364577371918
+2025-06-16,Puisserguier,Hérault,–,38,puisserguier,herault,puisserguier,herault,34,3020.0,28.0,107.0,43.368,3.041,10,0.0033112582781456954
+2025-06-14,Murviel-lès-Montpellier,Hérault,Cathy,70,murviel-les-montpellier,herault,murviel-les-montpellier,herault,34,1930.0,10.0,190.0,43.606,3.737,10,0.0051813471502590676
+2025-06-12,Mauron,Morbihan,Sylvie,60,mauron,morbihan,mauron,morbihan,56,3170.0,67.0,47.0,48.084,-2.284,6,0.0018927444794952682
+2025-06-11,Vandoeuvre-lès-Nancy,Meurthe-et-Moselle,–,64,vandoeuvre-les-nancy,meurthe-et-moselle,vandoeuvre-les-nancy,meurthe-et-moselle,54,29537.0,9.0,3159.0,48.66,6.173,5,0.00016927920912753497
+2025-06-10,Nogent,Haute-Marne,Mélanie,31,nogent,haute-marne,nogent,haute-marne,52,3548.0,55.0,64.0,48.027,5.341,1,0.0002818489289740699
+2025-06-10,Caluire-et-Cuire,Rhône,–,88,caluire-et-cuire,rhone,caluire-et-cuire,rhone,69,43572.0,10.0,4190.0,45.797,4.842,15,0.0003442577802258331
+2025-06-06,Pont-Saint-Esprit,Gard,–,55,pont-saint-esprit,gard,pont-saint-esprit,gard,30,10600.0,19.0,568.0,44.261,4.648,4,0.0003773584905660377
+2025-06-06,Chalo-Saint-Mars,Essonne,–,93,chalo-saint-mars,essonne,chalo-saint-mars,essonne,91,1031.0,29.0,36.0,48.428,2.065,10,0.009699321047526674
+2025-06-05,Etreux,Aisne,Adeline,36,etreux,aisne,etreux,aisne,02,1457.0,10.0,141.0,49.991,3.654,4,0.002745367192862045
+2025-06-02,Lezoux,Puy-de-Dôme,–,70,lezoux,puy-de-dome,lezoux,puy-de-dome,63,6357.0,35.0,183.0,45.828,3.38,2,0.0003146138115463269
+2025-05-31,Livron-sur-Drôme,Drôme,–,63,livron-sur-drome,drome,livron-sur-drome,drome,26,9298.0,41.0,224.0,44.768,4.84,1,0.00010755001075500108
+2025-05-25,Aubagne,Bouches-du-Rhône,–,55,aubagne,bouches-du-rhone,aubagne,bouches-du-rhone,13,47342.0,55.0,863.0,43.292,5.57,18,0.0003802120738456339
+2025-05-01,Gréasque,Bouches-du-Rhône,Sylvie,60,greasque,bouches-du-rhone,greasque,bouches-du-rhone,13,4392.0,6.0,706.0,43.431,5.544,18,0.004098360655737705
+2025-05-17,Périgny,Charente-Maritime,–,40,perigny,charente-maritime,perigny,charente-maritime,17,8741.0,11.0,800.0,46.153,-1.094,2,0.00022880677268047135
+2025-05-18,Rillieux-la-Pape,Rhône,–,61,rillieux-la-pape,rhone,rillieux-la-pape,rhone,69,31247.0,15.0,2148.0,45.819,4.898,15,0.00048004608442410473
+2025-05-18,Chasseneuil-du-Poitou,Vienne,Véronique,55,chasseneuil-du-poitou,vienne,chasseneuil-du-poitou,vienne,86,4767.0,18.0,272.0,46.651,0.375,4,0.0008391021606880638
+2025-05-12,Chauffailles,Saône-et-Loire,Anzhela,55,chauffailles,saone-et-loire,chauffailles,saone-et-loire,71,3675.0,23.0,162.0,46.208,4.338,6,0.0016326530612244899
+2025-05-07,Mûrs-Érigné,Maine-et-Loire,Emma,13,murs-erigne,maine-et-loire,murs-erigne,maine-et-loire,49,5935.0,17.0,341.0,47.399,-0.537,5,0.0008424599831508003
+2025-05-09,Chevilly-Larue,Val-de-Marne,Céline,45,chevilly-larue,val-de-marne,chevilly-larue,val-de-marne,94,20326.0,4.0,4828.0,48.771,2.347,6,0.00029518842861359833
+2025-05-01,Stains,Seine-Saint-Denis,Banassa,29,stains,seine-saint-denis,stains,seine-saint-denis,93,40359.0,5.0,7488.0,48.955,2.382,15,0.00037166431279268564
+2025-04-20,Saint-Martin-de-Varreville,Manche,Cécile ,74,saint-martin-de-varreville,manche,saint-martin-de-varreville,manche,50,168.0,8.0,20.0,49.427,-1.236,1,0.005952380952380952
+2025-04-13,Champigny-sur-Marne,Val-de-Marne,Perrine,41,champigny-sur-marne,val-de-marne,champigny-sur-marne,val-de-marne,94,77724.0,11.0,6878.0,48.813,2.511,6,7.71962328238382e-05
+2025-04-09,Saintes,Charente-Maritime,Agnès,40,saintes,charente-maritime,saintes,charente-maritime,17,25518.0,46.0,556.0,45.744,-0.634,2,7.837604827964574e-05
+2025-03-06,Sainte-Hélène-sur-Isère,Savoie,Sandy,45,sainte-helene-sur-isere,savoie,sainte-helene-sur-isere,savoie,73,1209.0,14.0,83.0,45.613,6.322,2,0.0016542597187758478
+2025-03-26,Rennes,Ille-et-Vilaine,Monique,73,rennes,ille-et-vilaine,rennes,ille-et-vilaine,35,225081.0,50.0,4470.0,48.112,-1.68,8,3.5542760161897275e-05
+2025-03-29,Esternay,Marne,–,70,esternay,marne,esternay,marne,51,1808.0,32.0,57.0,48.732,3.558,5,0.0027654867256637168
+2025-02-21,Vigneux-sur-Seine,Essonne,Maria,71,vigneux-sur-seine,essonne,vigneux-sur-seine,essonne,91,31050.0,9.0,3462.0,48.7,2.417,10,0.00032206119162640903
+2025-03-24,Limeyrat,Dordogne,Nina,13,limeyrat,dordogne,limeyrat,dordogne,24,434.0,20.0,22.0,45.16,0.98,5,0.01152073732718894
+2025-03-24,Limeyrat,Dordogne,Amandine,38,limeyrat,dordogne,limeyrat,dordogne,24,434.0,20.0,22.0,45.16,0.98,5,0.01152073732718894
+2025-03-13,Aizenay,Vendée,Christelle,54,aizenay,vendee,aizenay,vendee,85,10146.0,82.0,124.0,46.739,-1.609,5,0.0004928050463236743
+2025-03-13,Maurepas,Yvelines,Rim,42,maurepas,yvelines,maurepas,yvelines,78,18611.0,8.0,2205.0,48.762,1.945,8,0.0004298533125570899
+2025-02-20,Hayange,Moselle,Alexandra,27,hayange,moselle,hayange,moselle,57,15968.0,12.0,1306.0,49.33,6.064,6,0.000375751503006012
+2025-03-09,Etain,Meuse,Gilberte ,76,etain,meuse,etain,meuse,55,3473.0,20.0,173.0,49.213,5.636,1,0.00028793550244745177
+2025-03-08,Fos-sur-Mer,Bouches-du-Rhône,–,16,fos-sur-mer,bouches-du-rhone,fos-sur-mer,bouches-du-rhone,13,15469.0,89.0,174.0,43.455,4.944,18,0.0011636175576960372
+2025-03-04,Saint-Denis,La Réunion,Salma,35,saint-denis,la reunion,saint-denis,la reunion,974,154765.0,142.0,1094.0,-20.879,55.448,4,2.5845636933415177e-05
+2025-03-02,Marseille,Bouches-du-Rhône,–,34,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2025-02-28,Franconville,Val-d'Oise,–,1,franconville,val-d'oise,franconville,val-d'oise,95,37520.0,6.0,6022.0,48.986,2.23,5,0.00013326226012793177
+2025-03-01,Choisy-Le-Roi,Val-de-Marne,–,60,choisy-le-roi,val-de-marne,choisy-le-roi,val-de-marne,94,46129.0,5.0,8527.0,48.762,2.41,6,0.00013007002102798673
+2025-02-28,Changis-sur-Marne,Seine-et-Marne,Josette,80,changis-sur-marne,seine-et-marne,changis-sur-marne,seine-et-marne,77,1386.0,7.0,200.0,48.959,3.014,5,0.0036075036075036075
+2025-02-28,Marseille,Bouches-du-Rhône,–,81,marseille,bouches-du-rhone,marseille,bouches-du-rhone,13,873076.0,241.0,3629.0,43.296,5.37,18,2.0616761885563228e-05
+2025-02-20,Coincourt,Meurthe-et-Moselle,Gaëlle,36,coincourt,meurthe-et-moselle,coincourt,meurthe-et-moselle,54,114.0,8.0,14.0,48.701,6.611,5,0.043859649122807015
+2025-02-18,Strasbourg,Bas-Rhin,–,60,strasbourg,bas-rhin,strasbourg,bas-rhin,67,291313.0,78.0,3730.0,48.573,7.752,3,1.0298201590728872e-05
+2025-02-15,Sèvremoine,Maine-et-Loire,Laurie,45,sevremoine,maine-et-loire,sevremoine,maine-et-loire,49,25806.0,28.0,934.0,47.124,-0.994,5,0.00019375339068433697
+2025-02-07,Longjumeau,Essonne,Louise,11,longjumeau,essonne,longjumeau,essonne,91,20620.0,5.0,4243.0,48.694,2.296,10,0.00048496605237633366
+2025-02-07,Borgo,Haute-Corse,–,55,borgo,haute-corse,borgo,haute-corse,2B,9678.0,48.0,200.0,42.555,9.424,5,0.0005166356685265551
+2025-01-29,Portiragnes,Hérault, Elise,80,portiragnes,herault,portiragnes,herault,34,3247.0,20.0,162.0,43.304,3.338,10,0.003079765937788728
+2025-01-31,Retonfey,Moselle,–,73,retonfey,moselle,retonfey,moselle,57,1338.0,10.0,136.0,49.135,6.305,6,0.004484304932735426
+2025-01-29,Ploubazlanec,Côtes-d'Armor,Anonyme ,66,ploubazlanec,cotes-d'armor,ploubazlanec,cotes-d'armor,22,3040.0,15.0,196.0,48.802,-3.029,4,0.0013157894736842105
+2025-01-23,Saint-Martin-aux-Chartrains,Calvados,Maëva,20,saint-martin-aux-chartrains,calvados,saint-martin-aux-chartrains,calvados,14,426.0,5.0,84.0,49.308,0.153,3,0.007042253521126761
+2025-01-23,Landerneau,Finistère,Géraldine ,64,landerneau,finistere,landerneau,finistere,29,16206.0,14.0,1187.0,48.451,-4.248,7,0.0004319387881031717
+2025-01-16,Luçon,Vendée,Evelyne,69,lucon,vendee,lucon,vendee,85,9483.0,31.0,302.0,46.456,-1.17,5,0.0005272593061267532
+2025-01-16,Pujaut,Gard,Hélène ,60,pujaut,gard,pujaut,gard,30,3908.0,24.0,165.0,44.006,4.776,4,0.0010235414534288639
+2025-01-15,Laon,Aisne,Sonia,52,laon,aisne,laon,aisne,02,24021.0,45.0,539.0,49.565,3.621,4,0.00016652096082594398
+2025-01-09,Cenon,Gironde,Nasrine,41,cenon,gironde,cenon,gironde,33,26778.0,6.0,4690.0,44.858,-0.531,7,0.00026140861901560985
+2025-01-02,Oyonnax,Ain,–,78,oyonnax,ain,oyonnax,ain,01,22277.0,36.0,620.0,46.258,5.656,2,8.977869551555416e-05
