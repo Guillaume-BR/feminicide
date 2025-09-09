@@ -3,7 +3,9 @@ import numpy as np
 import plotly.express as px
 import streamlit as st
 
-# Supposons df_fem contient latitude, longitude, age, prenom, date, commune, departement
+st.title("Carte animée des féminicides en France (2022-2025)")
+# Charger les données
+df_fem = pd.read_csv('data/processed/feminicide_2022_2025.csv')
 
 # S'assurer que la colonne 'date' est datetime
 df_fem['date'] = pd.to_datetime(df_fem['date'])
