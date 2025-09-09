@@ -6,6 +6,7 @@ import os
 from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from folium.plugins import TimestampedGeoJson
+import streamlit as st
 
 
 #definir working directory
@@ -13,14 +14,14 @@ os.chdir('C:/Users/ghirg/Documents/GitHub/feminicide')
 
 df_fem = pd.read_csv('./data/processed/feminicide_2022_2025.csv')
 
+st.title('Visualisation des féminicides en France (2022-2025)')
+st.write('Cette application visualise les données des féminicides en France entre 2022 et 2025.')
 
 def create_map(df):
     """Create a folium map with heatmap."""
     m = folium.Map(location=[df['latitude'].mean(), df['longitude'].mean()], zoom_start=6)
     HeatMap(data=df[['latitude', 'longitude', 'frequence_par_habitant']].values, radius=15).add_to(m)
     return m
-
-create_map(df_fem).save('feminicide_map.html')
 
 #mettre un pointeur sur la carte pour chaque feminicide et quand il y en plusieurs avec le même point, les décaler un peu
 def create_map_with_markers(df):
@@ -35,8 +36,6 @@ def create_map_with_markers(df):
                   f"{row['commune_sans_accent']}, {row['departement_sans_accent']}"
         ).add_to(marker_cluster)
     return m
-
-create_map_with_markers(df_fem).save('feminicide_map_with_markers.html')
 
 #creer timeline où les pointeurs arrivent les uns après les autres selon la date
 def create_timeline_map_jitter(df):
@@ -103,3 +102,8 @@ def create_timeline_map_jitter(df):
 
 timeline_map = create_timeline_map_jitter(df_fem)
 timeline_map.save("feminicide_timeline.html")
+
+#intégrer la carte dans streamlit
+st.components.v1.html(timeline_map._repr_html_(), width=800, height=600)
+
+
