@@ -6,6 +6,7 @@ from folium.plugins import HeatMap
 from folium.plugins import MarkerCluster
 from folium.plugins import TimestampedGeoJson
 import streamlit as st
+import streamlit_folium as st_folium    
 
 
 #definir working directory
@@ -103,6 +104,6 @@ timeline_map = create_timeline_map_jitter(df_fem)
 timeline_map.save("feminicide_timeline.html")
 
 #intégrer la carte dans streamlit
-st.components.v1.html(timeline_map._repr_html_(), width=800, height=600)
+st_folium(timeline_map._repr_html_(), width=800, height=600)
 
 
