@@ -15,13 +15,8 @@ from streamlit_folium import st_folium
 df_fem = pd.read_csv('./data/processed/feminicide_2022_2025.csv')
 
 st.title('Visualisation des féminicides en France (2022-2025)')
-st.write('Cette application visualise les données des féminicides en France entre 2022 et 2025.')
+st.write('Cette application montre les données des féminicides en France entre 2022 et 2025.')
 
-def create_map(df):
-    """Create a folium map with heatmap."""
-    m = folium.Map(location=[df['latitude'].mean(), df['longitude'].mean()], zoom_start=6)
-    HeatMap(data=df[['latitude', 'longitude', 'frequence_par_habitant']].values, radius=15).add_to(m)
-    return m
 
 #mettre un pointeur sur la carte pour chaque feminicide et quand il y en plusieurs avec le même point, les décaler un peu
 def create_map_with_markers(df):
