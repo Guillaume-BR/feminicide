@@ -10,7 +10,7 @@ from streamlit_folium import st_folium
 
 
 #definir working directory
-#os.chdir('C:/Users/ghirg/Documents/GitHub/feminicide')
+wd = os.path.dirname(os.path.abspath(__file__))
 
 df_fem = pd.read_csv('./data/processed/feminicide_2022_2025.csv')
 
