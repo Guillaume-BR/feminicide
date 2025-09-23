@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_37e433194ae65606bba9f5a743e7eee6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iso8601-js-period@0.2.1/iso8601.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/default.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet-timedimension@1.1.1/dist/leaflet.timedimension.control.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_37e433194ae65606bba9f5a743e7eee6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_37e433194ae65606bba9f5a743e7eee6 = L.map(
+                "map_37e433194ae65606bba9f5a743e7eee6",
+                {
+                    center: [56.096555, -3.64746],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b1958ea60fe465d5dd6ec40e95da322d = L.tileLayer(
+                "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca target=\"_blank\" href=\"http://cartodb.com/attributions\"\u003eCartoDB\u003c/a\u003e, CartoDB \u003ca target=\"_blank\" href =\"http://cartodb.com/attributions\"\u003eattributions\u003c/a\u003e", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_37e433194ae65606bba9f5a743e7eee6);
+        
+    
+            L.Control.TimeDimensionCustom = L.Control.TimeDimension.extend({
+                _getDisplayDateFormat: function(date){
+                    var newdate = new moment(date);
+                    console.log(newdate)
+                    return newdate.format("YYYY/MM/DD");
+                }
+            });
+            map_37e433194ae65606bba9f5a743e7eee6.timeDimension = L.timeDimension(
+                {
+                    period: "P1M",
+                }
+            );
+            var timeDimensionControl = new L.Control.TimeDimensionCustom(
+                {"autoPlay": false, "loopButton": true, "maxSpeed": 1, "minSpeed": 0.1, "playerOptions": {"loop": false, "startOver": true, "transitionTime": 200}, "position": "bottomleft", "speedSlider": true, "timeSliderDragUpdate": true}
+            );
+            map_37e433194ae65606bba9f5a743e7eee6.addControl(this.timeDimensionControl);
+
+            var geoJsonLayer = L.geoJson({"type": "FeatureCollection", "features": [{"type": "Feature", "geometry": {"type": "Point", "coordinates": [-2.548828, 51.467697]}, "properties": {"time": "2017-06-02", "popup": "<h1>address1</h1>", "id": "house", "icon": "marker", "iconstyle": {"iconUrl": "https://github.com/Guillaume-BR/feminicide/blob/main/pictures/icone_feminicide.png", "iconSize": [20, 20]}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-0.087891, 51.536086]}, "properties": {"time": "2017-07-02", "popup": "<h2 style='color:blue;'>address2<h2>", "id": "house", "icon": "marker", "iconstyle": {"iconUrl": "https://github.com/Guillaume-BR/feminicide/blob/main/pictures/icone_feminicide.png", "iconSize": [20, 20]}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-6.240234, 53.383328]}, "properties": {"time": "2017-08-02", "popup": "<h2 style='color:orange;'>address3<h2>", "id": "house", "icon": "marker", "iconstyle": {"iconUrl": "https://github.com/Guillaume-BR/feminicide/blob/main/pictures/icone_feminicide.png", "iconSize": [20, 20]}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.40625, 60.261617]}, "properties": {"time": "2017-09-02", "popup": "<h2 style='color:green;'>address4<h2>", "id": "house", "icon": "marker", "iconstyle": {"iconUrl": "https://github.com/Guillaume-BR/feminicide/blob/main/pictures/icone_feminicide.png", "iconSize": [20, 20]}}}, {"type": "Feature", "geometry": {"type": "Point", "coordinates": [-1.516113, 53.800651]}, "properties": {"time": "2017-10-02", "popup": "<table style='width:100%'>\n  <tr>\n    <th>Firstname</th>\n    <th>Lastname</th>\n    <th>Age</th>\n  </tr>\n  <tr>\n    <td>Jill</td>\n    <td>Smith</td>\n    <td>50</td>\n  </tr>\n  <tr>\n    <td>Eve</td>\n    <td>Jackson</td>\n    <td>94</td>\n  </tr>\n</table>\n", "id": "house", "icon": "marker", "iconstyle": {"iconUrl": "https://github.com/Guillaume-BR/feminicide/blob/main/pictures/icone_feminicide.png", "iconSize": [20, 20]}}}, {"type": "Feature", "geometry": {"type": "LineString", "coordinates": [[-2.548828, 51.467697], [-0.087891, 51.536086], [-6.240234, 53.383328], [-1.40625, 60.261617], [-1.516113, 53.800651]]}, "properties": {"popup": "Current address", "times": ["2017-06-02", "2017-07-02", "2017-08-02", "2017-09-02", "2017-10-02"], "icon": "circle", "iconstyle": {"fillColor": "green", "fillOpacity": 0.6, "stroke": "false", "radius": 13}, "style": {"weight": 0}, "id": "man"}}]}, {
+                    pointToLayer: function (feature, latLng) {
+                        if (feature.properties.icon == 'marker') {
+                            if(feature.properties.iconstyle){
+                                return new L.Marker(latLng, {
+                                    icon: L.icon(feature.properties.iconstyle)});
+                            }
+                            //else
+                            return new L.Marker(latLng);
+                        }
+                        if (feature.properties.icon == 'circle') {
+                            if (feature.properties.iconstyle) {
+                                return new L.circleMarker(latLng, feature.properties.iconstyle)
+                                };
+                            //else
+                            return new L.circleMarker(latLng);
+                        }
+                        //else
+
+                        return new L.Marker(latLng);
+                    },
+                    style: function (feature) {
+                        return feature.properties.style;
+                    },
+                    onEachFeature: function(feature, layer) {
+                        if (feature.properties.popup) {
+                        layer.bindPopup(feature.properties.popup);
+                        }
+                        if (feature.properties.tooltip) {
+                        layer.bindTooltip(feature.properties.tooltip);
+                        }
+                    }
+                })
+
+            var timestamped_geo_json_88b87239da4e2e3db7dbedc668de9b16 = L.timeDimension.layer.geoJson(
+                geoJsonLayer,
+                {
+                    updateTimeDimension: true,
+                    addlastPoint: true,
+                    duration: "P2M",
+                }
+            ).addTo(map_37e433194ae65606bba9f5a743e7eee6);
+        
+</script>
+</html>
