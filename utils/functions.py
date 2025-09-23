@@ -3,12 +3,12 @@ import folium
 import pandas as pd
 import numpy as np
 from folium.plugins import TimestampedGeoJson
-
+import plotly.express as px
 
 def timeline_map_jitter(df):
     """Create a folium map with a timeline of markers and slight offset for overlapping points."""
     # Centrer la carte
-    m = folium.Map(location=[46.87119718803805, 3.154828089876449], zoom_start=6)
+    m = folium.Map(location=[46.9, 3.2], zoom_start=6)
     # Assurer que la colonne 'date' est en datetime
     df['date'] = pd.to_datetime(df['date'])
     # Compter les doublons de coordonnées
@@ -28,22 +28,22 @@ def timeline_map_jitter(df):
         feature = {
             "type": "Feature",
             "geometry": {
-                "type": "Point",
-                "coordinates": [lon, lat],
+            "type": "Point",
+            "coordinates": [lon, lat],
             },
             "properties": {
                 "time": row['date'].strftime("%Y-%m-%d"),
                 "popup": f"{row['prenom']} {int(row['age']) if pd.notnull(row['age']) else 'Non nommée'} ans  - {row['date'].strftime('%Y-%m-%d')} - "
-                         f"{row['commune']}, {row['departement']}",
-                "icon": "circle",
+                     f"{row['commune']}, {row['departement']}",
+                "id" : "house",
+                "icon": "marker",
                 "iconstyle": {
-                    "fillColor": "red",
-                    "fillOpacity": 0.6,
-                    "stroke": "true",
-                    "radius": 7
-                },
-            },
-        }
+                    "iconUrl": "https://raw.githubusercontent.com/Guillaume-BR/feminicide/main/pictures/icone_feminicide.png",  # chemin relatif vers l'image
+                    "iconSize": [25, 25],         # taille de l'icône en pixels
+                    "iconAnchor": [12, 12],       # point d'ancrage de l'icône
+                    },
+                }
+            }
         features.append(feature)
     # Ajouter la timeline
     TimestampedGeoJson(
@@ -58,3 +58,24 @@ def timeline_map_jitter(df):
         time_slider_drag_update=True
     ).add_to(m)
     return m
+
+
+def barplot_age_distribution(df, age_stats):
+    fig = px.bar(
+        df,
+        x="Tranche d'âge",
+        y="Pourcentage",
+        color="Type",
+        barmode="group",  # barres côte à côte
+        text="Pourcentage",
+        labels={"Tranche d'âge":"Tranche d'âge (ans)", "Pourcentage":"Pourcentage (%)"},
+        width=800,
+        height=500
+    )
+
+    # Afficher les valeurs sur les barres
+    fig.update_traces(texttemplate="%{text:.1f}%", textposition="outside")
+
+    # Améliorer la lisibilité des labels X
+    fig.update_layout(xaxis_tickangle=-45, yaxis_range=[0, age_stats[["Fréquence des féminicides (%)","Population globale (%)"]].max()*1.2])
+    return fig
