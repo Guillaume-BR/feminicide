@@ -1,1 +1,11 @@
+*.log
 
+# Ignore data files
+/data/raw
+
+*.html
+
+/utils/__pycache__
+
+/.devcontainer
+/.vscode

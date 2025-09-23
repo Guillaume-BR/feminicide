@@ -15,7 +15,7 @@ st.set_page_config(
 )
 
 # Config globale
-st.set_page_config(page_title="Dashboard Féminicides", page_icon="🗺️", layout="wide")
+st.set_page_config(page_title="Le fléau des féminicides", page_icon="🗺️", layout="wide")
 
 #charger les données
 data_path = os.path.join(wd, "data", "processed", "feminicide_2022_2025.csv")
