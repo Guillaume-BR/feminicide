@@ -16,8 +16,10 @@ df_fem = pd.read_csv(fem_path)
 
 st.title("📊 Existe-t-il des facteurs d'influence ?")
 
-#Créer pichart à partir de la colonne 'meurtrier'
-st.markdown("<h2>Répartition des liens entre victimes et meurtriers</h2>", unsafe_allow_html=True)
+
+#Pichart à partir de la colonne 'meurtrier'
+
+st.markdown("<h2 >Répartition des liens entre victimes et meurtriers</h2>", unsafe_allow_html=True)
 tab_count = df_fem['meurtrier_cat'].value_counts()
 
 fig_pie = px.pie(
@@ -34,7 +36,7 @@ st.markdown("""Non, les femmes ne sont pas tuées par des inconnus mais surtout 
             """)
 
 #Etude par années
-st.markdown("<h2>Le nombre de féminicides dépend-il des années ?</h2>", unsafe_allow_html=True)
+st.markdown("<h2 id=annee>Le nombre de féminicides dépend-il des années ?</h2>", unsafe_allow_html=True)
 
 df_fem["année"] = pd.to_datetime(df_fem["date"], errors="coerce").dt.year
 nb_fem = df_fem["année"].value_counts().sort_index()
@@ -52,7 +54,7 @@ st.write("Le nombre de féminicides est malheureusement constant au cours du tem
 
 
 #Statistique par tranche d'âge
-st.markdown("<h2>Cela dépend-il de l'âge ?</h2>", unsafe_allow_html=True)
+st.markdown("<h2 >Cela dépend-il de l'âge ?</h2>", unsafe_allow_html=True)
 
 #lire prop_femme.csv
 prop_path = os.path.join(wd, "..", "data", "processed", "prop_femme.csv")
@@ -134,10 +136,8 @@ Toutefois, ne connaissant pas le ou les motifs de ces meurtres, nous ne pouvons 
 
 st.markdown("<h2>La zone géographique a-t-elle un impact ?</h2>", unsafe_allow_html=True)
 
-#charger les données des départements
+#charger les données des départements des féminicides par département
 json_dep = gpd.read_file(os.path.join(wd, "..", "data", "processed", "departements_feminicide.geojson"))
-
-#charger les données des féminicides par département
 df_total_dep = pd.read_csv(os.path.join(wd, "..", "data", "processed", "df_total_dep.csv"))
 
 
@@ -149,14 +149,14 @@ Carte = folium.Map(location=location, zoom_start=zoom, tiles="cartodbpositron")
 #faire une carte des départements avec le nombre de féminicides par département
 chloropleth = folium.Choropleth(
     geo_data=json_dep,
-    name="choropleth",
     data=df_total_dep,
     columns=["dep_nom", "feminicide_per_100k"],
     key_on="feature.properties.nom",  # correspond au champ du geojson
     fill_color="RdPu",
     fill_opacity=0.7,
-    line_opacity=0.2,
+    line_opacity=1,
     legend_name="Féminicides pour 100 000 habitants/an",
+    highlight=True
 )
 
 chloropleth.geojson.add_child(
