@@ -33,8 +33,13 @@ def timeline_map_jitter(df):
             },
             "properties": {
                 "time": row['date'].strftime("%Y-%m-%d"),
-                "popup": f"{row['prenom']} {int(row['age']) if pd.notnull(row['age']) else 'Non nommée'} ans  - {row['date'].strftime('%Y-%m-%d')} - "
-                     f"{row['commune']}, {row['departement']}",
+                "popup": (
+                        f"{row['prenom']} "
+                        f"{int(row['age']) if pd.notnull(row['age']) else 'Non nommée'} ans, "
+                        f"tuée par son {row['meurtrier']} le {row['date'].strftime('%Y-%m-%d')}<br>"
+                        f"{row['commune']}, {row['departement']}<br>"
+                        f"<a href='{row['lien_instagram']}' target='_blank'>Lien Instagram</a>" if pd.notnull(row['lien_instagram']) else ""
+                    ),
                 "id" : "house",
                 "icon": "marker",
                 "iconstyle": {

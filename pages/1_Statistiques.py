@@ -16,6 +16,23 @@ df_fem = pd.read_csv(fem_path)
 
 st.title("📊 Existe-t-il des facteurs d'influence ?")
 
+#Créer pichart à partir de la colonne 'meurtrier'
+st.markdown("<h2>Répartition des liens entre victimes et meurtriers</h2>", unsafe_allow_html=True)
+tab_count = df_fem['meurtrier_cat'].value_counts()
+
+fig_pie = px.pie(
+    values=tab_count.values,
+    names=tab_count.index,
+    width=800,
+    height=500
+)
+
+st.plotly_chart(fig_pie)
+
+st.markdown("""Non, les femmes ne sont pas tuées par des inconnus mais surtout par **des gens de leur entourage proche** et notamment
+            leur **conjoint** dans plus de 70% des cas. 
+            """)
+
 #Etude par années
 st.markdown("<h2>Le nombre de féminicides dépend-il des années ?</h2>", unsafe_allow_html=True)
 
@@ -108,9 +125,12 @@ fig_15 = barplot_age_distribution(df_long_15,age_stats_15)
 # Afficher dans Streamlit
 st.plotly_chart(fig_15, use_container_width=True)
 
-st.write("Avant 20 ans, la proportion de féminicides est très inférieure à la population globale. Ensuite malheureusement, le pourcentage de féminicides devient supérieur à la population glabale, jusqu'à 65 ans." \
-"On peut émettre une hypothèse sur le fait que les femmes se mettent en couple à partir de 20 ans et le risque de féminicide augmente avec la vie de couple."\
-     " Toutefois, ne connaissant pas le ou les motifs de ces meurtres, nous ne pouvons aller plus loin dans les interprétations.")
+
+
+st.markdown("""Avant 20 ans, la proportion de féminicides est très inférieure à la population globale. Ensuite malheureusement, le pourcentage de féminicides devient supérieur à la population glabale, jusqu'à 65 ans.          
+On peut émettre une hypothèse sur le fait que les femmes se mettent en couple à partir de 20 ans et le risque de féminicide augmente avec la vie de couple.
+Toutefois, ne connaissant pas le ou les motifs de ces meurtres, nous ne pouvons aller plus loin dans les interprétations.
+            """)
 
 st.markdown("<h2>La zone géographique a-t-elle un impact ?</h2>", unsafe_allow_html=True)
 
@@ -173,8 +193,6 @@ Carte.get_root().html.add_child(folium.Element(legend_nan))
 st_folium(Carte, width=800, height=500)
 
 st.markdown("""
-### Analyse de la carte des féminicides
-
 Cette carte a été construite à partir de données recensant les féminicides de 2022 à 2025.  
 Il y a donc certains départements où l'on manque de données afin de pouvoir calculer le **taux de féminicides par 100 000 habitants et par an**.  
 Ces départements sont indiqués en **noir** sur la carte.  
@@ -183,5 +201,6 @@ On note qu'il n'y a pas nécessairement de lien entre la nature de certains dép
 
 Toutefois, pour les départements peu peuplés comme par exemple les **Hautes-Alpes** ou la **Corse du Nord**, le taux de féminicides peut être surestimé car un seul féminicide dans un département peu peuplé peut faire augmenter fortement ce taux.  
 
-On observe enfin que le centre de la France semble moins touché que le reste du territoire, mais il est difficile d'en tirer des conclusions pertinentes.
+On observe enfin que le centre de la France semble moins touché que le reste du territoire, mais il est difficile d'en tirer des conclusions pertinentes si ce n'est que **chaque femme tuée est un féminicide de trop**.
 """)
+

@@ -1,6 +1,6 @@
 *.log
 
-# Ignore data files
+# Ignore raw data files
 /data/raw
 
 *.html
