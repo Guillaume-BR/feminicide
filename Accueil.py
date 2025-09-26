@@ -21,9 +21,10 @@ df_fem = pd.read_csv(data_path)
 
 # -------- PAGE ACCUEIL --------
 st.title('Les féminicides en France de 2022 à 2025')
-st.write('Les données recensées en France métropolitaine et outre-mer.')
+st.write('En France, tous les trois jours, une femme est assassinée.')
 
 timeline_map = timeline_map_jitter(df_fem)
+
 #intégrer la carte dans streamlit
 st_folium(timeline_map, width=800, height=600)
 

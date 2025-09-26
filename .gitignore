@@ -9,3 +9,6 @@
 
 /.devcontainer
 /.vscode
+/.git
+
+# Ignore environment files
