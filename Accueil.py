@@ -21,7 +21,10 @@ df_fem = pd.read_csv(data_path)
 
 # -------- PAGE ACCUEIL --------
 st.title('Les féminicides en France de 2022 à 2025')
-st.write('En France, tous les trois jours, une femme est assassinée.')
+st.markdown('En France, **tous les trois jours**, une femme est assassinée.')
+st.markdown("Merci au collectif #NousToutes pour leur travail de recensement et de sensibilisation aux féminicides en France." )
+st.markdown("N'hésitez pas à répondre ou à consulter le résultat de leurs [enquêtes](https://www.noustoutes.org/enquetes/)."
+)
 
 timeline_map = timeline_map_jitter(df_fem)
 

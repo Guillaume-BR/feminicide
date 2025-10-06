@@ -5,7 +5,8 @@ st.title("📚 Autres ressources")
 
 st.write("Pour en savoir plus sur le sujet des féminicides, voici quelques ressources supplémentaires :")
 st.markdown("""
-- Collectif NousToutes : [https://www.noustoutes.org/](https://www.noustoutes.org/) 
+- Merci au collectif NousToutes : [https://www.noustoutes.org/](https://www.noustoutes.org/).
+    N'hésitez pas à participer à leur [enquête](https://www.noustoutes.org/enquetes/)
 - Fondation des Femmes : [https://www.fondationdesfemmes.org/](https://www.fondationdesfemmes.org/)
 - Observatoire des Violences Faites aux Femmes en Hérault : [https://www.ovff34.fr/](https://www.ovff34.fr/)
 - Haut Conseil à l'Égalité entre les femmes et les hommes (HCE) sur les féminicides : [https://www.haut-conseil-egalite.gouv.fr/](https://www.haut-conseil-egalite.gouv.fr/)
