@@ -6,7 +6,40 @@ from folium.plugins import TimestampedGeoJson
 import plotly.express as px
 
 def timeline_map_jitter(df):
-    """Create a folium map with a timeline of markers and slight offset for overlapping points."""
+    """
+    Create a Folium map displaying a timeline of markers with jitter for overlapping points.
+
+    This function generates an interactive map using Folium, where each marker represents an event
+    (e.g., feminicide) at a specific location and date. If multiple events share the same coordinates,
+    their markers are slightly offset ("jittered") to avoid overlap. The map includes a timeline slider
+    to visualize the events chronologically.
+
+    Parameters
+    ----------
+    df : pandas.DataFrame
+        DataFrame containing the following columns:
+            - 'latitude': float, latitude of the event
+            - 'longitude': float, longitude of the event
+            - 'date': datetime or str, date of the event
+            - 'prenom': str, first name of the victim
+            - 'age': float or int, age of the victim
+            - 'meurtrier': str, relationship to the perpetrator
+            - 'commune': str, commune of the event
+            - 'departement': str, department of the event
+            - 'lien_instagram': str or NaN, Instagram link (optional)
+
+    Returns
+    -------
+    folium.Map
+        Folium map object with timeline and jittered markers.
+
+    Notes
+    -----
+    - Markers are offset by a small distance (~200m) if multiple events share the same coordinates.
+    - Each marker includes a popup with event details and an optional Instagram link.
+    - The timeline slider allows users to explore events by date.
+    """
+    
     # Centrer la carte
     m = folium.Map(location=[46.9, 3.2], zoom_start=6)
     # Assurer que la colonne 'date' est en datetime
@@ -66,6 +99,20 @@ def timeline_map_jitter(df):
 
 
 def barplot_age_distribution(df, age_stats):
+    """
+    Génère un graphique à barres représentant la distribution des tranches d'âge en pourcentage, 
+    en distinguant les types d'événements (par exemple, féminicides vs population globale).
+    Paramètres
+    ----------
+    df : pandas.DataFrame
+        DataFrame contenant les données à visualiser, avec au moins les colonnes "Tranche d'âge", "Pourcentage" et "Type".
+    age_stats : pandas.DataFrame
+        DataFrame contenant les statistiques d'âge, utilisé pour définir la plage de l'axe des ordonnées.
+    Retourne
+    --------
+    fig : plotly.graph_objs._figure.Figure
+        Objet Figure Plotly représentant le graphique à barres.
+    """
     fig = px.bar(
         df,
         x="Tranche d'âge",
