@@ -7,8 +7,8 @@
 
 /utils/__pycache__
 
-/.devcontainer
-/.vscode
-/.git
+.devcontainer/
+.vscode/
+.git/
 
 # Ignore environment files
