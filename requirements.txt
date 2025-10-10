@@ -1,8 +1,8 @@
-streamlit
-folium
-streamlit-folium
-pandas
-numpy
-plotly
-geopandas
-branca
+streamlit == 1.49.1
+folium == 0.20.0
+streamlit-folium == 0.25.1
+pandas == 2.3.2
+numpy == 2.0.2
+plotly == 6.3.0
+geopandas == 1.0.1
+branca == 0.6.0
