@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Montserrat', sans-serif !important;
+    color: #2E294E !important;
+    background-color: #F6F3FA !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif !important;
+    color: #5E4B8B !important;
+}
+
+.stButton>button {
+    background-color: #7D5BA6 !important;
+    color: white !important;
+    border-radius: 10px !important;
+    border: none !important;
+    font-weight: 600 !important;
+    transition: 0.3s ease-in-out;
+}
+.stButton>button:hover {
+    background-color: #5E4B8B !important;
+    transform: scale(1.03);
+}
+
+.stSidebar {
+    background-color: #E9E1F5 !important;
+}

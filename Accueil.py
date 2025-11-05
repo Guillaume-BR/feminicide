@@ -8,6 +8,22 @@ import plotly.express as px
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
 
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+
+# --- Titre principal ---
+st.set_page_config(page_title="Observatoire des Féminicides", page_icon="♀️")
+
+st.sidebar.title("⚙️ Paramètres d'affichage")
+
+theme_choice = st.sidebar.radio("Thème :" , ["Clair", "Sombre" ])
+
+if theme_choice == "Sombre":
+    local_css("styles/dark_mode.css")
+else:
+    local_css("styles/light_mode.css")
+
 # Config de la page
 st.set_page_config(
     page_title="Le fléau des féminicides",

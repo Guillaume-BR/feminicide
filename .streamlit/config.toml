@@ -1,0 +1,7 @@
+[theme]
+base="light"
+primaryColor="#7D5BA6"         # Violet doux
+backgroundColor="#F6F3FA"      # Fond très clair légèrement lavande
+secondaryBackgroundColor="#E9E1F5"
+textColor="#2E294E"
+font="sans serif"
