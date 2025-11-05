@@ -135,7 +135,7 @@ def barplot_age_distribution(df, age_stats):
 
 def load_global_css():
     # Chemin absolu vers le projet
-    css_file = Path(__file__).parent.parent / "styles" / "global.css"
+    css_file = Path(__file__).parent.parent / "styles" / "light.css"
     if css_file.exists():
         with open(css_file) as f:
             st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
