@@ -13,27 +13,12 @@ def local_css(file_name):
         st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Titre principal ---
-st.set_page_config(page_title="Observatoire des Féminicides", page_icon="♀️")
+st.set_page_config(page_title="Le fléau des Féminicides", page_icon="♀️")
 
 st.markdown("""
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
 """, unsafe_allow_html=True)
 
-st.sidebar.title("⚙️ Paramètres d'affichage")
-
-theme_choice = st.sidebar.radio("Thème :" , ["Clair", "Sombre" ])
-
-if theme_choice == "Sombre":
-    local_css("styles/dark.css")
-else:
-    local_css("styles/light.css")
-
-# Config de la page
-st.set_page_config(
-    page_title="Le fléau des féminicides",
-    page_icon="🗺️",
-    layout="wide"
-)
 
 #charger les données
 data_path = os.path.join(wd, "data", "processed", "feminicide_2022_2025.csv")
