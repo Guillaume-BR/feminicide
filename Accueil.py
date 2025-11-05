@@ -10,16 +10,9 @@ from utils.functions import timeline_map_jitter
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
     
-from pathlib import Path
-
-# Chemin vers le CSS
-css_file = Path(__file__).resolve().parent
-if "pages" in str(css_file):
-    # Si on est dans pages/, remonte d’un niveau pour atteindre la racine
-    css_file = css_file.parent / "styles" / "light.css"
-else:
-    # Si on est à la racine
-    css_file = css_file / "styles" / "light.css"
+# Charger le CSS global
+with open("styles/light.css") as f:
+    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Titre principal ---
 st.set_page_config(page_title="Le fléau des Féminicides", page_icon="♀️")
