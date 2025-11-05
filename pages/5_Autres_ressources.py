@@ -1,7 +1,4 @@
 import streamlit as st
-from utils.functions import load_global_css
-
-load_global_css()
 
 
 st.title("📚 Autres ressources")

@@ -1,9 +1,7 @@
 import streamlit as st
 import pandas as pd
 import os
-from utils.functions import barplot_age_distribution, load_global_css
-
-load_global_css()
+from utils.functions import barplot_age_distribution
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
