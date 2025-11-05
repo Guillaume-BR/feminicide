@@ -22,7 +22,7 @@ nb_fem = df_fem["année"].value_counts().reindex(annees, fill_value=0)
 
 # Créer le barplot
 fig, ax = plt.subplots(figsize=(8, 4))
-ax.bar(nb_fem.index, nb_fem.values, color="#1f77b4")
+ax.bar(nb_fem.index, nb_fem.values, color="#6c8b14")
 ax.set_xlabel("Année")
 ax.set_ylabel("Nombre de féminicides")
 ax.set_title("Répartition annuelle des féminicides (2022–2025)")
