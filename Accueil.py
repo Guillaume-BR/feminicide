@@ -15,6 +15,10 @@ def local_css(file_name):
 # --- Titre principal ---
 st.set_page_config(page_title="Observatoire des Féminicides", page_icon="♀️")
 
+st.markdown("""
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+""", unsafe_allow_html=True)
+
 st.sidebar.title("⚙️ Paramètres d'affichage")
 
 theme_choice = st.sidebar.radio("Thème :" , ["Clair", "Sombre" ])

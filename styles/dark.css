@@ -1,9 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap');
+body, html, .stButton>button, .stSidebar, .stSelectbox, .stTextInput {
+    transition: background-color 0.5s ease, color 0.5s ease !important;
+    font-family: 'Montserrat', sans-serif !important;
+}
 
 html, body, [class*="css"] {
-    font-family: 'Montserrat', sans-serif !important;
-    color: #EDEAF6 !important;
     background-color: #1F1B2C !important;
+    color: #EDEAF6 !important;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -17,8 +19,8 @@ h1, h2, h3, h4, h5, h6 {
     border-radius: 10px !important;
     border: none !important;
     font-weight: 600 !important;
-    transition: 0.3s ease-in-out;
 }
+
 .stButton>button:hover {
     background-color: #7D5BA6 !important;
     transform: scale(1.03);
