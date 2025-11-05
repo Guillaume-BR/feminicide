@@ -2,16 +2,7 @@ import streamlit as st
 import pandas as pd
 import os
 import plotly.express as px
-from pathlib import Path
 
-# Chemin vers le CSS
-css_file = Path(__file__).resolve().parent
-if "pages" in str(css_file):
-    # Si on est dans pages/, remonte d’un niveau pour atteindre la racine
-    css_file = css_file.parent / "styles" / "light.css"
-else:
-    # Si on est à la racine
-    css_file = css_file / "styles" / "light.css"
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))

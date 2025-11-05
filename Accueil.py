@@ -9,10 +9,6 @@ from utils.functions import timeline_map_jitter
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
-    
-# Charger le CSS global
-with open("styles/light.css") as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
 # --- Titre principal ---
 st.set_page_config(page_title="Le fléau des Féminicides", page_icon="♀️")
