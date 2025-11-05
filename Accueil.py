@@ -2,8 +2,8 @@ import pandas as pd
 import os
 import streamlit as st
 from streamlit_folium import st_folium  
-from utils.functions import timeline_map_jitter, load_global_css
-import plotly.express as px
+from utils.functions import timeline_map_jitter
+
 
 
 
