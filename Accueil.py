@@ -2,8 +2,10 @@ import pandas as pd
 import os
 import streamlit as st
 from streamlit_folium import st_folium  
-from utils.functions import timeline_map_jitter
+from utils.functions import timeline_map_jitter, load_global_css
 import plotly.express as px
+
+load_global_css()
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))

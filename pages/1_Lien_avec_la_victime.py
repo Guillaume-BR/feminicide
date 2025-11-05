@@ -1,10 +1,10 @@
 import streamlit as st
 import pandas as pd
 import os
-import folium
-from streamlit_folium import st_folium
-import geopandas as gpd
 import plotly.express as px
+from utils.functions import load_global_css
+
+load_global_css()
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))

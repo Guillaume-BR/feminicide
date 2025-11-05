@@ -1,32 +1,45 @@
-/* Polices chargées via HTML dans app.py */
-body, html, .stButton>button, .stSidebar, .stSelectbox, .stTextInput {
-    transition: background-color 0.5s ease, color 0.5s ease !important;
-    font-family: 'Montserrat', sans-serif !important;
-}
+/* Polices importées */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Playfair+Display:wght@500&display=swap');
 
+/* Corps de la page */
 html, body, [class*="css"] {
-    background-color: #F6F3FA !important;
-    color: #2E294E !important;
+    font-family: 'Montserrat', sans-serif !important;
+    color: #2E294E !important; /* texte principal violet foncé */
+    background-color: #F6F3FA !important; /* fond très clair lavande */
+    transition: background-color 0.5s ease, color 0.5s ease;
 }
 
+/* Titres */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Playfair Display', serif !important;
-    color: #5E4B8B !important;
+    color: #5E4B8B !important; /* violet moyen pour titres */
 }
 
+/* Boutons Streamlit */
 .stButton>button {
-    background-color: #7D5BA6 !important;
+    background-color: #7D5BA6 !important; /* violet doux */
     color: white !important;
     border-radius: 10px !important;
     border: none !important;
     font-weight: 600 !important;
+    transition: background-color 0.3s ease-in-out;
 }
-
 .stButton>button:hover {
     background-color: #5E4B8B !important;
     transform: scale(1.03);
 }
 
+/* Sidebar */
 .stSidebar {
-    background-color: #E9E1F5 !important;
+    background-color: #E9E1F5 !important; /* violet très clair */
+}
+
+/* Widgets */
+.stSelectbox, .stTextInput, .stNumberInput, .stDateInput {
+    border-radius: 8px !important;
+}
+
+/* Graphiques Streamlit */
+.plotly, .stPlotlyChart {
+    background-color: #F6F3FA !important;
 }

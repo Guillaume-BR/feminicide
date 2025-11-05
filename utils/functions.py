@@ -131,3 +131,8 @@ def barplot_age_distribution(df, age_stats):
     # Améliorer la lisibilité des labels X
     fig.update_layout(xaxis_tickangle=-45, yaxis_range=[0, age_stats[["Fréquence des féminicides (%)","Population globale (%)"]].max()*1.2])
     return fig
+
+
+def load_global_css():
+    with open("styles/light.css") as f:
+        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
