@@ -20,7 +20,7 @@ Le but de ce projet est de continuer à sensibiliser le public aux violences fai
 1. **Collecte des données :** Récupération des données sur les féminicides en France de 2022 à 2025 à partir de sources fiables.
 2. **Nettoyage des données :** Suppression des doublons, gestion des valeurs manquantes, et formatage des données.
 3. **Jointure des données :** Fusion des données des féminicides avec les données des communes pour obtenir des informations géographiques.
-4. **Géocodification :** Utilisation de la bibliothèque Geopy pour obtenir les coordonnées géographiques (latitude et longitude) pour les jointures défaillantes (NaN).
+4. **Géocodification :** Utilisation de la bibliothèque Geopy et de son API pour obtenir les coordonnées géographiques (latitude et longitude) pour les jointures défaillantes (NaN).
 5. **Utilisation de l'API OpenAI :** Classification des liens entre la victime et le meurtrier.e.
 6. **Visualisation des données :** Création de graphiques et de cartes interactives pour représenter les données : Timeline, répartition par âge, lien avec la victime, répartition géographique.
 7. **Déploiement de l'application :** Utilisation de Streamlit pour créer une page web permettant aux utilisateurs d'explorer les données.
