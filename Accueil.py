@@ -5,14 +5,17 @@ from streamlit_folium import st_folium
 from utils.functions import timeline_map_jitter, load_global_css
 import plotly.express as px
 
-load_global_css()
+
 
 #definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
 
-def local_css(file_name):
-    with open(file_name) as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+# Charger le CSS global
+css_file = Path(__file__).parent.parent / "styles" / "light.css" if "pages" in str(Path(__file__).parent) else Path(__file__) / "styles" / "light.css"
+if css_file.exists():
+    st.markdown(f"<style>{css_file.read_text(encoding='utf-8')}</style>", unsafe_allow_html=True)
+else:
+    st.warning(f"CSS introuvable : {css_file}")
 
 # --- Titre principal ---
 st.set_page_config(page_title="Le fléau des Féminicides", page_icon="♀️")
