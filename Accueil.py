@@ -20,9 +20,9 @@ st.sidebar.title("⚙️ Paramètres d'affichage")
 theme_choice = st.sidebar.radio("Thème :" , ["Clair", "Sombre" ])
 
 if theme_choice == "Sombre":
-    local_css("styles/dark_mode.css")
+    local_css("styles/dark.css")
 else:
-    local_css("styles/light_mode.css")
+    local_css("styles/light.css")
 
 # Config de la page
 st.set_page_config(
