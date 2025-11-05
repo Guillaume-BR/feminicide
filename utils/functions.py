@@ -4,6 +4,7 @@ import pandas as pd
 import numpy as np
 from folium.plugins import TimestampedGeoJson
 import plotly.express as px
+from pathlib import Path
 
 def timeline_map_jitter(df):
     """
@@ -132,7 +133,11 @@ def barplot_age_distribution(df, age_stats):
     fig.update_layout(xaxis_tickangle=-45, yaxis_range=[0, age_stats[["Fréquence des féminicides (%)","Population globale (%)"]].max()*1.2])
     return fig
 
-
 def load_global_css():
-    with open("styles/light.css") as f:
-        st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    # Chemin absolu vers le projet
+    css_file = Path(__file__).parent.parent / "styles" / "global.css"
+    if css_file.exists():
+        with open(css_file) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+    else:
+        st.warning(f"Fichier CSS non trouvé : {css_file}")
