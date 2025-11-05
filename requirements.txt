@@ -6,3 +6,4 @@ numpy
 plotly
 geopandas
 branca
+matplotlib
