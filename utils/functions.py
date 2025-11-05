@@ -134,10 +134,17 @@ def barplot_age_distribution(df, age_stats):
     return fig
 
 def load_global_css():
-    # Chemin absolu vers le projet
-    css_file = Path(__file__).parent.parent / "styles" / "light.css"
-    if css_file.exists():
-        with open(css_file) as f:
-            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
-    else:
-        st.warning(f"Fichier CSS non trouvé : {css_file}")
+    """
+    Charge le CSS global depuis le dossier 'styles' à la racine du projet.
+    Compatible avec les pages dans 'pages/' et la racine.
+    """
+    # Racine du projet = cherche un dossier 'styles' depuis le dossier courant ou parents
+    current = Path(__file__).resolve()
+    for parent in [current] + list(current.parents):
+        css_path = parent / "styles" / "light.css"
+        if css_path.exists():
+            with open(css_path, "r", encoding="utf-8") as f:
+                css_content = f.read()
+                st.markdown(f"<style>{css_content}</style>", unsafe_allow_html=True)
+            return
+    st.error("Fichier global.css introuvable dans le dossier 'styles' à la racine du projet.")
