@@ -1,4 +1,3 @@
-#creer timeline où les pointeurs arrivent les uns après les autres selon la date
 import folium
 import pandas as pd
 import numpy as np
@@ -6,7 +5,7 @@ from folium.plugins import TimestampedGeoJson
 import plotly.express as px
 from pathlib import Path
 
-def timeline_map_jitter(df):
+def timeline_map_jitter(df: pd.DataFrame) -> folium.Map:
     """
     Create a Folium map displaying a timeline of markers with jitter for overlapping points.
 
@@ -99,7 +98,7 @@ def timeline_map_jitter(df):
     return m
 
 
-def barplot_age_distribution(df, age_stats):
+def barplot_age_distribution(df: pd.DataFrame, age_stats: pd.DataFrame) -> px.bar:
     """
     Génère un graphique à barres représentant la distribution des tranches d'âge en pourcentage, 
     en distinguant les types d'événements (par exemple, féminicides vs population globale).
