@@ -31,6 +31,11 @@ age_bins = pd.cut(df_fem["age"], bins=bins, right=False, labels=labels)
 age_stats = age_bins.value_counts().sort_index()
 age_stats = (age_stats / age_stats.sum() * 100).round(1)
 age_stats = age_stats.reset_index()
+# df_prop doit contenir une ligne par tranche d'âge, dans le même ordre que age_stats
+# (le concat ci-dessous aligne les deux DataFrames par position, pas par clé).
+assert len(age_stats) == len(df_prop), (
+    "df_prop n'a pas le même nombre de tranches d'âge que age_stats"
+)
 age_stats = pd.concat([age_stats, df_prop["prop"]], axis=1)
 age_stats.columns = [
     "Tranche d'âge",
@@ -73,6 +78,10 @@ df_tot["prop"] = df_tot["Femmes"] / df_tot["Femmes"].sum() * 100
 df_tot["prop"] = df_tot["prop"].round(1)
 df_tot.reset_index(drop=True, inplace=True)
 
+# Même hypothèse d'alignement positionnel que ci-dessus.
+assert len(age_stats_15) == len(df_tot), (
+    "df_tot n'a pas le même nombre de tranches d'âge que age_stats_15"
+)
 age_stats_15 = pd.concat([age_stats_15, df_tot["prop"]], axis=1, ignore_index=True)
 age_stats_15.columns = [
     "Tranche d'âge",

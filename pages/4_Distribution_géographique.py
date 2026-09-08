@@ -46,8 +46,6 @@ chloropleth.geojson.add_child(folium.features.GeoJsonTooltip(["Légende"], label
 chloropleth.add_to(Carte)
 
 # rajouter une légende pour les données manquantes
-import branca
-
 legend_nan = """
 <div style="
     position: fixed; 

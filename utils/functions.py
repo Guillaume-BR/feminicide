@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 from folium.plugins import TimestampedGeoJson
 import plotly.express as px
-from pathlib import Path
 
 
 def timeline_map_jitter(df: pd.DataFrame) -> folium.Map:
@@ -43,6 +42,7 @@ def timeline_map_jitter(df: pd.DataFrame) -> folium.Map:
 
     # Centrer la carte
     m = folium.Map(location=[46.9, 3.2], zoom_start=6)
+    df = df.copy()
     # Assurer que la colonne 'date' est en datetime
     df["date"] = pd.to_datetime(df["date"])
     # Compter les doublons de coordonnées
@@ -79,7 +79,9 @@ def timeline_map_jitter(df: pd.DataFrame) -> folium.Map:
                 "id": "house",
                 "icon": "marker",
                 "iconstyle": {
-                    "iconUrl": "https://raw.githubusercontent.com/Guillaume-BR/feminicide/main/pictures/icone_feminicide.png",  # chemin relatif vers l'image
+                    # URL distante requise : le rendu Folium/Leaflet s'exécute côté navigateur
+                    # et ne peut pas référencer un fichier local du serveur Streamlit.
+                    "iconUrl": "https://raw.githubusercontent.com/Guillaume-BR/feminicide/main/pictures/icone_feminicide.png",
                     "iconSize": [25, 25],  # taille de l'icône en pixels
                     "iconAnchor": [12, 12],  # point d'ancrage de l'icône
                 },
