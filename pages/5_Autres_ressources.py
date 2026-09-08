@@ -1,6 +1,5 @@
 import streamlit as st
 
-
 st.title("📚 Autres ressources")
 
 st.write(

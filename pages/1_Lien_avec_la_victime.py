@@ -1,8 +1,8 @@
-import streamlit as st
-import pandas as pd
 import os
-import plotly.express as px
 
+import pandas as pd
+import plotly.express as px
+import streamlit as st
 
 # definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))

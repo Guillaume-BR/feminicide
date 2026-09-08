@@ -1,8 +1,8 @@
 import folium
-import pandas as pd
 import numpy as np
-from folium.plugins import TimestampedGeoJson
+import pandas as pd
 import plotly.express as px
+from folium.plugins import TimestampedGeoJson
 
 
 def timeline_map_jitter(df: pd.DataFrame) -> folium.Map:

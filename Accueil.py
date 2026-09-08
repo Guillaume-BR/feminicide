@@ -1,9 +1,10 @@
-import pandas as pd
 import os
+
+import pandas as pd
 import streamlit as st
 from streamlit_folium import st_folium
-from utils.functions import timeline_map_jitter
 
+from utils.functions import timeline_map_jitter
 
 # definir working directory
 wd = os.path.dirname(os.path.abspath(__file__))
