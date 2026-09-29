@@ -14,7 +14,7 @@ import requests
 DATASET_API_URL = (
     "https://www.data.gouv.fr/api/1/datasets/decompte-et-recensement-des-feminicides/"
 )
-YEAR_PATTERN = re.compile(r"féminicides (\d{4})")
+YEAR_PATTERN = re.compile(r"féminicides (\d{4})", re.IGNORECASE)
 RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 STATE_PATH = Path(__file__).resolve().parent.parent / "data" / "fetch_state.json"
 
@@ -60,13 +60,21 @@ def load_state(path: Path) -> dict[str, str]:
         return {}
 
 
+def needs_update(remote_last_modified: str, stored_last_modified: str) -> bool:
+    return remote_last_modified != stored_last_modified
+
+
 def main() -> None:
     yearly_urls = get_yearly_resources()
     print(f"Found {len(yearly_urls)} yearly resources")
     state = load_state(STATE_PATH)
     print(f"Loaded state: {state}")
     for year in sorted(yearly_urls):
-        if yearly_urls[year]["last_modified"] == state.get(year, ""):
+        remote_last_modified = yearly_urls[year]["last_modified"]
+        stored_last_modified = state.get(year, "")
+        if needs_update(remote_last_modified, stored_last_modified):
+            print(f"{year}: needs update")
+        else:
             print(f"{year}: already up to date")
             continue
         dest_path = download_resource(year, yearly_urls[year]["url"])
