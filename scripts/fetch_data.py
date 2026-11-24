@@ -11,11 +11,12 @@ from pathlib import Path
 
 import requests
 
+from scripts.configuration import RAW_DIR
+
 DATASET_API_URL = (
     "https://www.data.gouv.fr/api/1/datasets/decompte-et-recensement-des-feminicides/"
 )
 YEAR_PATTERN = re.compile(r"féminicides (\d{4})", re.IGNORECASE)
-RAW_DIR = Path(__file__).resolve().parent.parent / "data" / "raw"
 STATE_PATH = Path(__file__).resolve().parent.parent / "data" / "fetch_state.json"
 
 
