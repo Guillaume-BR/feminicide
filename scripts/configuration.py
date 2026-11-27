@@ -26,6 +26,15 @@ COMMUNE_CORRECTIONS = {
     "equilivaz/la-salle": "equilivaz-la-salle",  # hors de France
 }
 
+# Communes manquantes dans la source : lien Instagram de la publication (unique) -> commune.
+# S'applique uniquement si la commune est vide ; à vider quand la source est corrigée.
+COMMUNE_FIXES = {
+    "https://www.instagram.com/p/DUOpjAnjOZg/": "Beauvais",  # Mathilde, 17/05/2025
+}
+
+# Valeur donnée à une commune absente de la source (jamais jointe à un fichier de communes)
+UNKNOWN_COMMUNE = "inconnue"
+
 # Dossier des données intermédiaires (jamais lu par l'application Streamlit)
 INTERIM_DIR = Path(__file__).resolve().parent.parent / "data" / "interim"
 

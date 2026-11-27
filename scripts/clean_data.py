@@ -10,10 +10,12 @@ import pandas as pd
 from scripts.configuration import (
     ARRONDISSEMENT_PATTERN,
     COMMUNE_CORRECTIONS,
+    COMMUNE_FIXES,
     FILENAME_PATTERN,
     INTERIM_DIR,
     RAW_DIR,
     SPECIAL_CHARS_TABLE,
+    UNKNOWN_COMMUNE,
 )
 
 
@@ -86,6 +88,36 @@ def rename_columns(df: pd.DataFrame) -> pd.DataFrame:
         df = df.rename(columns={"quand": "date", "lieu": "commune"})
 
     df = df.drop(columns=["n"], errors="ignore")
+    return df
+
+
+def fix_missing_communes(df: pd.DataFrame) -> pd.DataFrame:
+    """Renseigne les communes manquantes de la source via `COMMUNE_FIXES`.
+
+    Chaque correction est identifiée par le lien Instagram de la publication.
+    Une commune déjà renseignée n'est jamais remplacée.
+
+    Args: df: DataFrame avec les colonnes `commune` et `lien_instagram`.
+
+    Returns: Copie corrigée du DataFrame (l'entrée n'est pas modifiée).
+
+    Raises:
+        - KeyError: Si `commune` ou `lien_instagram` est absente.
+        - ValueError: Si un lien de `COMMUNE_FIXES` ne correspond pas à exactement
+          une ligne (correction obsolète ou lien ambigu).
+    """
+    if "commune" not in df.columns or "lien_instagram" not in df.columns:
+        raise KeyError("Colonne(s) 'commune' ou 'lien_instagram' absente(s).")
+
+    df = df.copy()
+    for lien, commune in COMMUNE_FIXES.items():
+        masque = df["lien_instagram"] == lien
+        if masque.sum() != 1:
+            raise ValueError(
+                f"{masque.sum()} ligne(s) pour le lien {lien} (1 attendue) : "
+                "corriger COMMUNE_FIXES."
+            )
+        df.loc[masque & df["commune"].isna(), "commune"] = commune
     return df
 
 
@@ -185,6 +217,24 @@ def correct_communes(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 
+def fill_missing_communes(df: pd.DataFrame) -> pd.DataFrame:
+    """Remplace une commune manquante par `UNKNOWN_COMMUNE`.
+
+    Le département reste renseigné : la ligne compte dans les totaux par département.
+
+    Args: df: DataFrame avec la colonne `commune_normalise`.
+
+    Returns: Copie corrigée du DataFrame (l'entrée n'est pas modifiée).
+
+    Raises: KeyError: Si `commune_normalise` est absente.
+    """
+    if "commune_normalise" not in df.columns:
+        raise KeyError("Colonne 'commune_normalise' absente des données.")
+    df = df.copy()
+    df["commune_normalise"] = df["commune_normalise"].fillna(UNKNOWN_COMMUNE)
+    return df
+
+
 def check_places(df: pd.DataFrame) -> None:
     """Vérifie que les communes et départements sont exploitables.
 
@@ -210,11 +260,13 @@ def clean_data(path: Path = RAW_DIR) -> pd.DataFrame:
     df = create_full_dataset(path)
     df = normalize_columns(df)
     df = rename_columns(df)
+    df = fix_missing_communes(df)
     df = convert_date(df)
     df["commune_normalise"] = normalize_with_hyphens(df["commune"])
     df["dep_normalise"] = normalize_with_hyphens(df["departement"])
     df = normalize_places(df)
     df = correct_communes(df)
+    df = fill_missing_communes(df)
     check_places(df)
     return df
 

@@ -3,13 +3,21 @@ import re
 import pandas as pd
 import pytest
 
+from scripts import clean_data
 from scripts.clean_data import (
+    check_places,
     convert_date,
+    correct_communes,
     create_full_dataset,
+    fill_missing_communes,
+    fix_missing_communes,
     normalize_columns,
+    normalize_places,
     normalize_text,
+    normalize_with_hyphens,
     rename_columns,
 )
+from scripts.clean_data import clean_data as run_clean_data
 from scripts.configuration import SPECIAL_CHARS
 
 CSV_CONTENT = "QUAND,LIEU\n01/01/{year},Paris\n02/01/{year},Lyon\n"
@@ -215,3 +223,245 @@ def test_convert_date_with_wrong_df():
     )
     with pytest.raises(ValueError, match=re.escape("2 date(s) au mauvais format")):
         convert_date(df_wrong2)
+
+
+def test_fill_missing_communes():
+    df = pd.DataFrame(
+        {"commune_normalise": ["paris", None], "dep_normalise": ["paris", "oise"]}
+    )
+    avant = df.copy()
+
+    result = fill_missing_communes(df)
+
+    assert result["commune_normalise"].tolist() == ["paris", "inconnue"]
+    assert result["dep_normalise"].tolist() == ["paris", "oise"]
+    pd.testing.assert_frame_equal(df, avant)
+
+
+def test_fill_missing_communes_missing_column():
+    with pytest.raises(KeyError, match="commune_normalise"):
+        fill_missing_communes(pd.DataFrame({"autre": [1]}))
+
+
+LIEN = "https://exemple.org/p/abc/"
+
+
+@pytest.fixture
+def fixes(monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_FIXES", {LIEN: "Beauvais"})
+
+
+def test_fix_missing_communes_fills_empty_commune(fixes):
+    df = pd.DataFrame({"commune": [None, "Lyon"], "lien_instagram": [LIEN, "autre"]})
+    avant = df.copy()
+
+    result = fix_missing_communes(df)
+
+    assert result["commune"].tolist() == ["Beauvais", "Lyon"]
+    pd.testing.assert_frame_equal(df, avant)
+
+
+def test_fix_missing_communes_keeps_existing_commune(fixes):
+    """Source corrigée entre-temps : la valeur de la source l'emporte."""
+    df = pd.DataFrame({"commune": ["Compiègne"], "lien_instagram": [LIEN]})
+
+    assert fix_missing_communes(df)["commune"].tolist() == ["Compiègne"]
+
+
+def test_fix_missing_communes_unknown_link_raises(fixes):
+    df = pd.DataFrame({"commune": [None], "lien_instagram": ["autre"]})
+
+    with pytest.raises(ValueError, match="0 ligne"):
+        fix_missing_communes(df)
+
+
+def test_fix_missing_communes_ambiguous_link_raises(fixes):
+    df = pd.DataFrame({"commune": [None, None], "lien_instagram": [LIEN, LIEN]})
+
+    with pytest.raises(ValueError, match="2 ligne"):
+        fix_missing_communes(df)
+
+
+def test_fix_missing_communes_missing_column(fixes):
+    with pytest.raises(KeyError, match="lien_instagram"):
+        fix_missing_communes(pd.DataFrame({"commune": [None]}))
+
+
+def test_normalize_with_hyphens():
+    noms = pd.Series(["Saint Étienne", "Saint-Laurent-d\u2019Arce", "L'Isle", None])
+
+    result = normalize_with_hyphens(noms)
+
+    assert result.tolist()[:3] == ["saint-etienne", "saint-laurent-d-arce", "l-isle"]
+    assert pd.isna(result[3])
+
+
+def places(communes, deps):
+    return pd.DataFrame({"commune_normalise": communes, "dep_normalise": deps})
+
+
+@pytest.mark.parametrize(
+    ("commune", "dep", "attendu"),
+    [
+        ("13e-arrondissement", "paris", "paris"),
+        ("1er-arrondissement", "paris", "paris"),
+        ("3e-arrondissement", "bouches-du-rhone", "3e-arrondissement"),
+        ("marseille-3e-arrondissement", "paris", "marseille-3e-arrondissement"),
+        ("tremolat-", "dordogne", "tremolat"),
+        ("-lyon ", "rhone", "lyon"),
+    ],
+)
+def test_normalize_places_communes(commune, dep, attendu):
+    result = normalize_places(places([commune], [dep]))
+
+    assert result["commune_normalise"].tolist() == [attendu]
+
+
+def test_normalize_places_bourgoin_jallieu():
+    result = normalize_places(places(["bourgoin-jallieu-/-lyon"], ["rhone"]))
+
+    assert result["commune_normalise"].tolist() == ["bourgoin-jallieu"]
+    assert result["dep_normalise"].tolist() == ["isere"]
+
+
+def test_normalize_places_strips_department():
+    result = normalize_places(places(["lyon"], ["-rhone-"]))
+
+    assert result["dep_normalise"].tolist() == ["rhone"]
+
+
+def test_normalize_places_keeps_missing_values():
+    result = normalize_places(places([None, "lyon"], ["oise", "rhone"]))
+
+    assert pd.isna(result.loc[0, "commune_normalise"])
+    assert result.loc[1, "commune_normalise"] == "lyon"
+
+
+def test_normalize_places_does_not_modify_input():
+    df = places(["13e-arrondissement ", "bourgoin-jallieu-/-lyon"], ["paris", "rhone"])
+    avant = df.copy()
+
+    result = normalize_places(df)
+
+    pd.testing.assert_frame_equal(df, avant)
+    assert result is not df
+
+
+def test_normalize_places_missing_column():
+    with pytest.raises(KeyError, match="commune_normalise"):
+        normalize_places(pd.DataFrame({"dep_normalise": ["paris"]}))
+
+
+def test_correct_communes(monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_CORRECTIONS", {"paris-(18e)": "paris"})
+    df = places(["paris-(18e)", "lyon", None], ["paris", "rhone", "oise"])
+    avant = df.copy()
+
+    result = correct_communes(df)
+
+    assert result["commune_normalise"].tolist()[:2] == ["paris", "lyon"]
+    assert pd.isna(result.loc[2, "commune_normalise"])
+    pd.testing.assert_frame_equal(df, avant)
+
+
+def test_correct_communes_missing_column():
+    with pytest.raises(KeyError, match="commune_normalise"):
+        correct_communes(pd.DataFrame({"autre": [1]}))
+
+
+def test_check_places_valid():
+    check_places(places(["paris", "inconnue"], ["paris", "oise"]))
+
+
+def test_check_places_missing_commune():
+    with pytest.raises(ValueError, match=r"commune_normalise manquant.*\[1\]"):
+        check_places(places(["paris", None], ["paris", "oise"]))
+
+
+def test_check_places_missing_department():
+    with pytest.raises(ValueError, match=r"dep_normalise manquant.*\[0\]"):
+        check_places(places(["paris"], [None]))
+
+
+@pytest.mark.parametrize("nom", ["paris-(18e)", "equilivaz/la-salle"])
+def test_check_places_suspect_commune(nom):
+    with pytest.raises(ValueError, match=re.escape(nom)):
+        check_places(places([nom], ["paris"]))
+
+
+RAW_COLUMNS = "QUAND,LIEU,DÉPARTEMENT,LIEN INSTAGRAM\n"
+
+
+def write_raw(directory, lignes, year="2025"):
+    (directory / f"feminicide_{year}.csv").write_text(RAW_COLUMNS + lignes)
+
+
+def test_clean_data_end_to_end(tmp_path, monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_FIXES", {"lien-a": "Beauvais"})
+    write_raw(
+        tmp_path,
+        "01/01/2025,Saint Étienne,Loire,lien-b\n"
+        "02/01/2025,,Oise,lien-a\n"
+        "03/01/2025,Paris (18e),Paris,lien-c\n"
+        "04/01/2025,13e arrondissement,Paris,lien-d\n",
+    )
+
+    df = run_clean_data(tmp_path)
+
+    assert df["commune_normalise"].tolist() == [
+        "saint-etienne",
+        "beauvais",
+        "paris",
+        "paris",
+    ]
+    assert df["dep_normalise"].tolist() == ["loire", "oise", "paris", "paris"]
+    assert pd.api.types.is_datetime64_any_dtype(df["date"])
+
+
+def test_clean_data_unknown_commune_when_no_fix(tmp_path, monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_FIXES", {})
+    write_raw(tmp_path, "01/01/2025,Lyon,Rhône,lien-b\n02/01/2025,,Oise,lien-a\n")
+
+    result = run_clean_data(tmp_path)
+
+    assert result["commune_normalise"].tolist() == ["lyon", "inconnue"]
+
+
+def test_clean_data_fails_on_unlisted_suspect_commune(tmp_path, monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_FIXES", {})
+    write_raw(tmp_path, "02/01/2025,Nouvelle (Annexe),Oise,lien-a\n")
+
+    with pytest.raises(ValueError, match="COMMUNE_CORRECTIONS"):
+        run_clean_data(tmp_path)
+
+
+def test_clean_data_fails_on_bad_date(tmp_path, monkeypatch):
+    monkeypatch.setattr(clean_data, "COMMUNE_FIXES", {})
+    write_raw(tmp_path, "2025-01-02,Lyon,Rhône,lien-a\n")
+
+    with pytest.raises(ValueError, match="date"):
+        run_clean_data(tmp_path)
+
+
+def test_main_writes_interim_file(tmp_path, monkeypatch):
+    df = places(["paris"], ["paris"])
+    monkeypatch.setattr(clean_data, "clean_data", lambda: df)
+    monkeypatch.setattr(clean_data, "INTERIM_DIR", tmp_path / "interim")
+
+    clean_data.main()
+
+    ecrit = pd.read_csv(tmp_path / "interim" / "feminicide_clean.csv")
+    assert ecrit["commune_normalise"].tolist() == ["paris"]
+
+
+def test_main_writes_nothing_on_failure(tmp_path, monkeypatch):
+    def echec():
+        raise ValueError("boom")
+
+    monkeypatch.setattr(clean_data, "clean_data", echec)
+    monkeypatch.setattr(clean_data, "INTERIM_DIR", tmp_path / "interim")
+
+    with pytest.raises(ValueError, match="boom"):
+        clean_data.main()
+
+    assert not (tmp_path / "interim").exists()
